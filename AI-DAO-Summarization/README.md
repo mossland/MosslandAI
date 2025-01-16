@@ -71,6 +71,34 @@ This document outlines the necessary technologies, APIs, methodologies, advantag
 
 ---
 
+## Summarization Code Examples
+
+### 1. `summarization_pipeline.py`
+This script uses Hugging Face's `transformers` library and `spaCy` for preprocessing and summarization of DAO proposals. It demonstrates how to clean the input text and summarize it using pre-trained models like T5.
+
+**Key Features**:
+- Preprocesses text using `spaCy` for tokenization and sentence segmentation.
+- Generates summaries with Hugging Face's T5 model.
+
+**Example Use**:
+```bash
+python summarization_pipeline.py
+```
+
+### 2. `summarization_pipeline_openai.py`
+This script integrates OpenAI's GPT-4-turbo API for summarization tasks. It provides a more dynamic and context-aware summary generation, leveraging OpenAI's advanced language models.
+
+**Key Features**:
+- Utilizes spaCy for text preprocessing.
+- Sends cleaned text to OpenAI's ChatGPT API for high-quality summarization.
+
+**Example Use**:
+```bash
+python summarization_pipeline_openai.py
+```
+
+---
+
 ## Advantages and Limitations
 
 ### Advantages
