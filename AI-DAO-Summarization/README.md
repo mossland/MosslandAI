@@ -15,11 +15,11 @@ This document outlines the necessary technologies, APIs, methodologies, advantag
   - **Extractive Summarization**: Identifying key sentences or phrases directly from the proposal.
   - **Abstractive Summarization**: Generating human-like summaries that paraphrase the original text.
 - **Recommended Libraries/Frameworks**:
-  - [Hugging Face Transformers](https://huggingface.co/transformers): Provides pre-trained models like BERT, T5, and GPT-3 for summarization.
+  - [Hugging Face Transformers](https://huggingface.co/transformers): Provides pre-trained models like BERT, T5, and GPT-4 for summarization.
   - [spaCy](https://spacy.io/): Useful for preprocessing and entity recognition.
   - [NLTK](https://www.nltk.org/) or [Gensim](https://radimrehurek.com/gensim/): Lightweight solutions for extractive summarization.
 - **Example API**:
-  - [OpenAI GPT-3 API](https://openai.com/api) (e.g., `text-davinci`) for advanced abstractive summarization.
+  - [OpenAI GPT-4 API](https://openai.com/api) (e.g., `gpt-4-turbo`) for advanced abstractive summarization.
   - [Google Cloud Natural Language API](https://cloud.google.com/natural-language) for keyword extraction and sentiment analysis.
 
 ### 2. Personalization Engine
@@ -52,7 +52,7 @@ This document outlines the necessary technologies, APIs, methodologies, advantag
    - Tokenization, stopword removal, and entity recognition using `spaCy` or `NLTK`.
 
 3. **Summarization**:
-   - Use a pre-trained NLP model (e.g., T5, GPT-3) to generate summaries.
+   - Use a pre-trained NLP model (e.g., T5, GPT-4) to generate summaries.
    - **Example Pipeline**:
      ```python
      from transformers import pipeline
@@ -117,7 +117,7 @@ python summarization_pipeline_openai.py
 
 | **Tool/API**           | **Strengths**                                         | **Weaknesses**                                    |
 |-------------------------|------------------------------------------------------|--------------------------------------------------|
-| OpenAI GPT-3 API        | State-of-the-art language understanding and generation. | High cost and dependency on external services.   |
+| OpenAI GPT-4 API        | State-of-the-art language understanding and generation. | High cost and dependency on external services.   |
 | Hugging Face Transformers | Open-source, customizable models.                   | Requires significant infrastructure for hosting. |
 | Google Cloud NLP        | Easy to integrate, reliable for entity recognition.   | Limited advanced summarization capabilities.     |
 | Elasticsearch           | Powerful ranking and search functionality.           | Requires additional NLP for summarization.       |
