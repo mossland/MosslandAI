@@ -2,7 +2,7 @@
 
 This repository serves as a hub for ongoing AI research and development within the Mossland ecosystem. Our focus is on exploring the intersection of AI with DAOs, the metaverse, and Mosscoin utility. Key areas of research include:
 
-- **AI and DAO Integration**: Investigating the application of AI-driven tools for decentralized governance, such as automated proposal summarization and voting systems, to enhance participation and streamline decision-making processes in DAOs.
+- **AI and DAO Integration**: Investigating the application of AI-driven tools for decentralized governance, such as automated proposal summarization and voting systems, to enhance participation and streamline decision-making processes in DAOs. [📂 AI-DAO-Summarization](./AI-DAO-Summarization/)
 - **AI and Metaverse Applications**: Exploring how AI can enrich user experiences and interactions within virtual environments.
 - **Mosscoin Utility Expansion**: Developing AI agents to increase the practical use of Mosscoin, including tokenizing AI-generated prompts and integrating them into broader marketplaces.
 
@@ -28,4 +28,5 @@ This repository welcomes contributions from developers, researchers, and enthusi
 
 ---
 
-For more information on Mossland and its projects, please visit our official documentation or previous research repositories. Let's build the future of decentralized AI together!
+For more information on Mossland and its projects, please visit our official documentation or previous research repositories. Let's build the future of decentralized AI together! [lab@moss.land](mailto:lab@moss.land).
+
