@@ -103,6 +103,48 @@ This significantly **reduces friction** for casual voters, ensuring they can **p
 
 Such features **boost Bob’s productivity** and **ensure** that delegates can provide a more **transparent, data-driven** representation of community interests.
 
+## Sequence Diagram – Delegate using AI for proposal analysis
+
+```mermaid
+sequenceDiagram
+    participant Bob as Delegate (User)
+    participant UI as MosslandAI Dashboard
+    participant Agent as AI Agent (LLM)
+    participant DB as DAO Data (Proposals/Forums)
+
+    Note over Bob,Agent: Bob reviews proposals via AI assistance
+
+    Bob->>UI: Open dashboard (list of proposals)
+    UI-->>Bob: Display proposals with AI highlights
+
+    Bob->>UI: Select a proposal (VR Events) for details
+    UI-->>Agent: Request summary for Proposal #123
+
+    Agent->>DB: Fetch proposal #123 content
+    Agent->>Agent: Generate summary (LLM)
+    Agent-->>UI: Return summary text
+    UI-->>Bob: Show proposal page with AI summary
+
+    Bob->>Agent: \"Any related past proposals?\"
+    Agent->>DB: Search similar proposals/discussions
+    Agent->>Agent: Summarize related info
+    Agent-->>Bob: Provide context
+
+    Bob->>Agent: \"What's community sentiment?\"
+    Agent->>DB: Analyze forum comments sentiment
+    Agent-->>Bob: Returns sentiment data
+
+    Bob->>Agent: \"Compare with Marketing proposal\"
+    Agent->>DB: Fetch other proposal content
+    Agent->>Agent: Generate comparison
+    Agent-->>Bob: Provide comparative analysis
+
+    Bob->>UI: Cast vote YES
+    UI->>DB: Record vote on blockchain
+    UI-->>Bob: Confirm vote
+    Note over Bob,Agent: Bob proceeds to next proposal
+```
+
 <br/>
 
 ### 2.3 Core Decision-Makers
