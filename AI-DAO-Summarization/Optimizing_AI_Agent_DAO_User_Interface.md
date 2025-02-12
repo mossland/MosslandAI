@@ -53,8 +53,6 @@ This document examines:
 5. **Case Studies & Benchmarks** from existing AI+DAO applications (e.g., SingularityDAO, DeepDAO) and emergent paradigms such as AI delegation.  
 6. A **Proposed UI/UX Model** (complete with diagrams and pseudo-code) for **MosslandAI’s AI-DAO-Summarization** project.
 
-*(Note: Certain introductory statements referencing “Computer Science Ph.D.” or “technical report” have been removed as they are not essential for a typical academic paper submission. The content has been streamlined for clarity and conciseness.)*
-
 ---
 
 ## 1. The Role of AI Agents in DAO Environments
