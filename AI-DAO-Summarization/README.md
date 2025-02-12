@@ -25,6 +25,11 @@ This repository contains research and development efforts focused on leveraging 
 - **Description**: This research focuses on developing AI-powered summarization tools to efficiently process large volumes of DAO proposals and forum discussions. By utilizing NLP techniques, the system extracts key points and generates tailored summaries for different user groups.
 - **Folder**:
   - [📂 User-Centric Summarization of DAO Proposals](./User_Centric_Summarization_of_DAO_Proposals/)
+ 
+### 4. Optimizing the Interface between AI Agents and DAO Users
+- **Description**: This study explores the design and development of AI-driven user interfaces tailored for DAO environments. It focuses on enhancing the interaction between DAO users and AI agents through NLP, conversational UIs, and adaptive interfaces to improve governance engagement and efficiency.
+- **Files**:
+  - [📄 Optimizing the Interface between AI Agents and DAO Users](./Optimizing_AI_Agent_DAO_User_Interface.md)
 
 ## Contribution & Contact
 
