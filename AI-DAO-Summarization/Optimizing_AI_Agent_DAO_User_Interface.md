@@ -34,10 +34,7 @@
    - 6.3 Wireframe Prototype (Textual)  
    - 6.4 Representative Pseudo-Code  
 8. [Conclusion and Future Directions](#conclusion-and-future-directions)  
-9. [Acknowledgments (Optional)](#acknowledgments-optional)  
-10. [Limitations (Optional)](#limitations-optional)  
-11. [Appendices (Optional)](#appendices-optional)  
-12. [References](#12-references)
+9. [References](#12-references)
 
 ---
 
