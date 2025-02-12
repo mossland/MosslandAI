@@ -30,7 +30,7 @@ This repository contains research and development efforts focused on leveraging 
 - **Description**: This study explores the design and development of AI-driven user interfaces tailored for DAO environments. It focuses on enhancing the interaction between DAO users and AI agents through NLP, conversational UIs, and adaptive interfaces to improve governance engagement and efficiency.
 - **Files**:
   - [📄 Optimizing the Interface between AI Agents and DAO Users](./Optimizing_AI_Agent_DAO_User_Interface.md)
-  - [📄 MosslandAI AI DAO Summarization Use Cases](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md)
+  - [📄 MosslandAI AI DAO Summarization Use Cases](./Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md)
 
 
 ## Contribution & Contact
