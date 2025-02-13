@@ -37,6 +37,11 @@ This repository contains research and development efforts focused on leveraging 
 - **Files**:
   - [📄 DAO_Multi_Doc_Summarization_System_Design.md](./DAO_Multi_Doc_Summarization_System_Design.md)
 
+### 6. DAO User Scenario Flow Diagrams
+- **Description**: This section provides fictitious but plausible user scenarios in a DAO context, illustrating AI-driven processes that enhance governance and member interactions.
+- **Files**:
+  - [📄 DAO_User_Scenario_Flow_Diagrams.md](./DAO_User_Scenario_Flow_Diagrams.md)
+
 ## Contribution & Contact
 
 - Contributions to the research and codebase are welcome.
