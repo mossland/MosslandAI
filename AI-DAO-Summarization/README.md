@@ -32,6 +32,10 @@ This repository contains research and development efforts focused on leveraging 
   - [📄 Optimizing the Interface between AI Agents and DAO Users](./Optimizing_AI_Agent_DAO_User_Interface.md)
   - [📄 MosslandAI AI DAO Summarization Use Cases](./Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md)
 
+### 5. DAO-Focused Multi-Document Summarization System Design
+- **Description**: As Decentralized Autonomous Organizations (DAOs) grow in complexity, they generate diverse text data across multiple platforms (on-chain voting records, forums, internal repositories, etc.). Efficiently summarizing these documents is crucial for effective governance, decision-making, and community engagement.
+- **Files**:
+  - [📄 DAO_Multi_Doc_Summarization_System_Design.md](./DAO_Multi_Doc_Summarization_System_Design.md)
 
 ## Contribution & Contact
 
