@@ -42,6 +42,12 @@ This repository contains research and development efforts focused on leveraging 
 - **Files**:
   - [📄 DAO_User_Scenario_Flow_Diagrams.md](./DAO_User_Scenario_Flow_Diagrams.md)
 
+### 7. Optimizing AI Agent Access to Blockchain Smart Contracts
+- **Description**: This study explores how AI agents interact with blockchain smart contracts efficiently. It covers on-chain data querying, transaction execution, and smart contract design improvements for AI compatibility.
+- **Files**:
+  - [📄 Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md](./Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md)
+  - [📄 Optimizing_AI_Agent_Blockchain_Interaction.md](./Optimizing_AI_Agent_Blockchain_Interaction.md)
+
 ## Contribution & Contact
 
 - Contributions to the research and codebase are welcome.
