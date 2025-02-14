@@ -1,5 +1,8 @@
 # **Optimizing AI-Agent Interactions with Blockchain Smart Contracts: A Comprehensive Analysis**
----
+
+- Author: Mossland Lab
+- Email: lab@moss.land
+- Date of Initial Document Creation: February 14, 2025
 
 ## **Table of Contents**
 
