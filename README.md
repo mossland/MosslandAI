@@ -1,32 +1,81 @@
 # Mossland AI Research
 
-This repository serves as a hub for ongoing AI research and development within the Mossland ecosystem. Our focus is on exploring the intersection of AI with DAOs, the metaverse, and Mosscoin utility. Key areas of research include:
-
-- **AI and DAO Integration**: Investigating the application of AI-driven tools for decentralized governance, such as automated proposal summarization and voting systems, to enhance participation and streamline decision-making processes in DAOs. [📂 AI-DAO-Summarization](./AI-DAO-Summarization/)
-- **AI and Metaverse Applications**: Exploring how AI can enrich user experiences and interactions within virtual environments.
-- **Mosscoin Utility Expansion**: Developing AI agents to increase the practical use of Mosscoin, including tokenizing AI-generated prompts and integrating them into broader marketplaces.
-
-## Previous AI Research Initiatives
-
-Mossland has previously conducted several AI-related research projects, which are publicly available on GitHub:
-
-- [MossCoin AI NFT Research](https://github.com/mossland/MossCoin_AI_NFT_Research): Research on tokenizing AI-generated prompts as NFTs for ownership and monetization.
-- [MossCoin for Machine](https://github.com/mossland/MossCoinForMachine): Exploring the utility of MossCoin in machine-to-machine interactions.
-- [Mossland XR](https://github.com/mossland/MosslandXR): Research on leveraging AI and XR (Extended Reality) for immersive metaverse experiences.
-
-## Research Objectives
-
-This repository continues Mossland’s efforts by focusing on the following:
-
-1. **AI-Driven DAO Enhancements**: Using natural language processing (NLP) for automated proposal summaries, implementing AI-based delegated voting, and monitoring DAO activities in real time.
-2. **AI and Mossland Ecosystem Synergy**: Building AI systems to create a seamless bridge between Mossland’s metaverse platform, its users, and its governance mechanisms.
-3. **Expanding Mosscoin Use Cases**: Applying AI to foster innovative utilities for Mosscoin, such as integrating AI agents for tokenized content and market interactions.
-
-## Contributions
-
-This repository welcomes contributions from developers, researchers, and enthusiasts interested in advancing AI applications in blockchain, DAOs, and metaverses. Feel free to open issues or submit pull requests to collaborate.
+Welcome to the Mossland AI Research repository. Our latest work focuses on leveraging AI to transform decentralized governance, particularly through advanced DAO summarization, user profiling, and seamless blockchain interactions. Recent research projects in the [AI-DAO-Summarization](./AI-DAO-Summarization/) folder are driving these innovations.
 
 ---
 
-For more information on Mossland and its projects, please visit our official documentation or previous research repositories. Let's build the future of decentralized AI together! [lab@moss.land](mailto:lab@moss.land).
+## Latest Research Highlights
 
+Our most recent initiatives are centered on enhancing DAO efficiency and user engagement through AI-driven tools. Below are the key projects and their core contributions:
+
+### 1. AI-Based User Profiling & DAO Summary System
+- **Description**:  
+  This research uses AI to analyze user behaviors within DAO governance. By understanding voting patterns and preferences, it generates personalized summaries and recommendations, boosting engagement and informed decision-making.
+- **Resources**:
+  - [AI_Based_User_Profiling_DAO_Summary_System.md (Korean)](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System.md)
+  - [AI_Based_User_Profiling_DAO_Summary_System_EN.md (English)](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System_EN.md)
+
+### 2. Recent DAO AI Case Study
+- **Description**:  
+  This case study analyzes how AI has been successfully integrated into DAO decision-making processes. It examines both the effectiveness and the challenges encountered when deploying AI solutions in decentralized environments.
+- **Resources**:
+  - [Recent_DAO_AI_Case_Study.md (Korean)](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study.md)
+  - [Recent_DAO_AI_Case_Study_EN.md (English)](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study_EN.md)
+
+### 3. User-Centric Summarization of DAO Proposals
+- **Description**:  
+  In the face of increasing proposal volumes and complex discussions, this project develops AI tools to efficiently extract key points from DAO proposals and forum debates, delivering tailored summaries for diverse user groups.
+- **Resources**:
+  - [User-Centric Summarization of DAO Proposals Folder](./AI-DAO-Summarization/User_Centric_Summarization_of_DAO_Proposals/)
+
+### 4. Optimizing AI Agent Interaction in DAO Environments
+- **Description**:  
+  This study focuses on refining the interface between AI agents and DAO users. By harnessing natural language processing and adaptive conversational UIs, it aims to enhance user interactions, streamline governance processes, and improve overall engagement.
+- **Resources**:
+  - [Optimizing_AI_Agent_DAO_User_Interface.md](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface.md)
+  - [MosslandAI_AI_DAO_Summarization_Use_Cases.md](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md)
+
+### 5. DAO-Focused Multi-Document Summarization System Design
+- **Description**:  
+  As DAOs generate diverse text data—from on-chain records to community discussions—this project designs a system to consolidate and summarize information from multiple sources. The goal is to support more informed decision-making and enhance transparency.
+- **Resources**:
+  - [DAO_Multi_Doc_Summarization_System_Design.md](./AI-DAO-Summarization/DAO_Multi_Doc_Summarization_System_Design.md)
+
+### 6. DAO User Scenario Flow Diagrams
+- **Description**:  
+  This initiative presents illustrative flow diagrams of user scenarios within a DAO. It maps out AI-driven processes that facilitate governance and improve member interactions.
+- **Resources**:
+  - [DAO_User_Scenario_Flow_Diagrams.md](./AI-DAO-Summarization/DAO_User_Scenario_Flow_Diagrams.md)
+
+### 7. Optimizing AI Agent Access to Blockchain Smart Contracts
+- **Description**:  
+  Focusing on the technical integration of AI with blockchain, this project investigates efficient methods for AI agents to query on-chain data, execute transactions, and interact with smart contracts. It aims to refine both smart contract design and AI agent performance.
+- **Resources**:
+  - [Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md)
+  - [Optimizing_AI_Agent_Blockchain_Interaction.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Blockchain_Interaction.md)
+
+---
+
+## Ecosystem Integration
+
+Beyond DAO enhancements, our research also explores:
+- **AI and Metaverse Applications**: Innovating user experiences within virtual environments.
+- **Mosscoin Utility Expansion**: Developing AI agents that increase the practical use of Mosscoin—such as tokenizing AI-generated prompts for broader marketplace integration.
+
+---
+
+## Previous AI Research Initiatives
+
+We have a rich history of pioneering projects, including:
+- [MossCoin AI NFT Research](https://github.com/mossland/MossCoin_AI_NFT_Research): Investigating NFT tokenization of AI-generated prompts.
+- [MossCoin for Machine](https://github.com/mossland/MossCoinForMachine): Exploring machine-to-machine interactions using Mosscoin.
+- [Mossland XR](https://github.com/mossland/MosslandXR): Integrating AI with Extended Reality for immersive metaverse experiences.
+
+---
+
+## Get Involved
+
+We welcome contributions from developers, researchers, and enthusiasts passionate about decentralized AI innovation.  
+For collaboration or inquiries, please contact: [lab@moss.land](mailto:lab@moss.land).
+
+Let's build the future of decentralized AI together!
