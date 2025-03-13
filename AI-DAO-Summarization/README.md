@@ -48,6 +48,11 @@ This repository contains research and development efforts focused on leveraging 
   - [📄 Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md](./Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md)
   - [📄 Optimizing_AI_Agent_Blockchain_Interaction.md](./Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Blockchain_Interaction.md)
 
+### 8. AI-Based Cryptocurrency Analyst System Research
+- **Description**: This research explores the development of AI systems designed specifically for cryptocurrency analysis within DAO environments. It examines methods to automatically assess market dynamics, token valuations, and investment opportunities, providing DAO participants with actionable insights for informed decision-making.
+- **Files**:
+  - [📄 AI_Based_Cryptocurrency_Analyst_System_Research_Report.md](./AI_Based_Cryptocurrency_Analyst_System_Research_Report.md)
+
 ## Contribution & Contact
 
 - Contributions to the research and codebase are welcome.
