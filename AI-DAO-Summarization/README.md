@@ -53,6 +53,11 @@ This repository contains research and development efforts focused on leveraging 
 - **Files**:
   - [📄 AI_Based_Cryptocurrency_Analyst_System_Research_Report.md](./AI_Based_Cryptocurrency_Analyst_System_Research_Report.md)
 
+### 9. AI-Driven DAO Proposal Generation System
+- **Description**: This study examines AI methodologies to automatically generate relevant and insightful proposals for DAOs. By integrating diverse data sources (trend data, community sentiment, on-chain behavior), the research aims to streamline proposal creation, facilitate community engagement, and enhance governance processes.
+- **Files**:
+  - [📄 AI_Driven_DAO_Proposal_Generation_System.md](./AI_Driven_DAO_Proposal_Generation_System.md)
+
 ## Contribution & Contact
 
 - Contributions to the research and codebase are welcome.
