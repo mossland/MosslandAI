@@ -54,6 +54,12 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
   - [Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md)
   - [Optimizing_AI_Agent_Blockchain_Interaction.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Blockchain_Interaction.md)
 
+### 8. Character-Based AI Chatbot Platform Research
+- **Description**:  
+  This comprehensive research explores the architecture, ecosystem, blockchain integration, and future direction of character-based AI chatbot platforms. It details how persona-driven AI agents can serve as interactive content, intellectual property, and Web3-native assets.
+- **Resources**:
+  - [Character_AI_Chatbot_Platform_Research.md](./Character_AI_Chatbot/Character_AI_Chatbot_Platform_Research.md)
+
 ---
 
 ## Ecosystem Integration
