@@ -60,6 +60,12 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
 - **Resources**:
   - [Character_AI_Chatbot_Platform_Research.md](./Character_AI_Chatbot/Character_AI_Chatbot_Platform_Research.md)
 
+### 9. Innovative Blockchain Integrations for Character AI Chatbot Platforms
+- **Description**:  
+  This research explores how blockchain and cryptocurrency can be applied to character-based AI chatbot platforms. It proposes innovative solutions for decentralized identity, monetization, and ownership in both hybrid and fully on-chain systems.
+- **Resources**:
+  - [Innovative_Blockchain_Integration_Ideas_for_Character_AI.md](./Character_AI_Chatbot/Innovative_Blockchain_Integration_Ideas_for_Character_AI.md)
+
 ---
 
 ## Ecosystem Integration
