@@ -66,6 +66,12 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
 - **Resources**:
   - [Innovative_Blockchain_Integration_Ideas_for_Character_AI.md](./Character_AI_Chatbot/Innovative_Blockchain_Integration_Ideas_for_Character_AI.md)
 
+### 10. KRW-Pegged Stablecoin Integration for Mossland
+- **Description**:  
+  Analyzing stablecoin models like KRWO for potential integration within the Mossland ecosystem, facilitating transactions and DeFi applications.
+- **Resources**:
+  - [KRW-Pegged Stablecoin Design for Mossland](./Stablecoin_Research/KRW_Pegged_Stablecoin_for_Mossland.md)
+
 ---
 
 ## Ecosystem Integration
