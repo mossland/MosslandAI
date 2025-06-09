@@ -11,6 +11,12 @@ This folder contains comprehensive research and analysis documents regarding the
   - Complementary roles of Moss Coin (MOC) and the proposed stablecoin.
   - Technical architecture including smart contract design, blockchain platform choice, and DeFi integration strategies.
 
+- [**Exploring the Role of KRW-Pegged Stablecoins in Korea**](./krw-stablecoin-overview.md): An in-depth exploration covering:
+  - Regulatory landscape and legislative developments in South Korea.
+  - Technological and economic implications of introducing a KRW stablecoin.
+  - Comparative analysis between USD and KRW stablecoins.
+  - Strategic advantages for Korea’s monetary sovereignty and fintech innovation.
+
 ## Intended Audience
 
 This document is intended for blockchain developers, Mossland ecosystem architects, policy analysts, and stakeholders evaluating the integration of stablecoin solutions into Mossland’s platform.
