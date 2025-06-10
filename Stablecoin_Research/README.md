@@ -17,7 +17,9 @@ This folder contains comprehensive research and analysis documents regarding the
   - Comparative analysis between USD and KRW stablecoins.
   - Strategic advantages for Korea’s monetary sovereignty and fintech innovation.
  
-- [**Applications of KRW-Pegged Stablecoins**](https://github.com/mossland/MosslandAI/blob/main/Stablecoin_Research/krw-stablecoin-applications.md): Examination of KRW stablecoin applications in various industries including AI, metaverse, VR/AR, and gaming, featuring business models and real-world case studies.
+- [**Applications of KRW-Pegged Stablecoins**](./krw-stablecoin-applications.md): Examination of KRW stablecoin applications in various industries including AI, metaverse, VR/AR, and gaming, featuring business models and real-world case studies.
+
+- [**KRW Stablecoins in Leverage Markets**](./krw-stablecoin-leverage-market.md): Analysis of the critical role and expected market expansion of KRW-pegged stablecoins within leverage-based cryptocurrency exchanges. Focuses on use-case justification and integration strategies without delving into broader regulatory or trading strategy discussions.
 
 
 ## Intended Audience
