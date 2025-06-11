@@ -21,6 +21,7 @@ This folder contains comprehensive research and analysis documents regarding the
 
 - [**KRW Stablecoins in Leverage Markets**](./krw-stablecoin-leverage-market.md): Analysis of the critical role and expected market expansion of KRW-pegged stablecoins within leverage-based cryptocurrency exchanges. Focuses on use-case justification and integration strategies without delving into broader regulatory or trading strategy discussions.
 
+- [**CBDC vs. KRW Stablecoin Comparison**](https://github.com/mossland/MosslandAI/blob/main/Stablecoin_Research/krw-cbdc-stablecoin-comparison.md): Comparative analysis of Central Bank Digital Currencies (CBDC) versus KRW-pegged stablecoins, evaluating conceptual differences, policy implications, and practical use-cases.
 
 ## Intended Audience
 
