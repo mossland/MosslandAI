@@ -79,6 +79,15 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
   - [AI-GovRisk_EN.md (English)](./GovernanceRisk/AI-GovRisk_EN.md)  
   - [AI-GovRisk_KR.md (Korean)](./GovernanceRisk/AI-GovRisk_KR.md)
 
+### 12. EcoAI: Sustainable AI Infrastructure Optimization for Blockchain-Integrated Systems
+- **Description**:  
+  This research focuses on building a sustainable AI infrastructure that optimizes energy usage and operational efficiency within blockchain-integrated systems.  
+  **EcoAI** dynamically monitors AI and blockchain workloads, models energy consumption, and recommends optimization strategies using reinforcement learning.  
+  It also explores on-chain sustainability proofs and incentive systems (Green Proof & Eco Credit), establishing a new standard for *Green AI* within the Web3 ecosystem.
+- **Resources**:
+  - [EcoAI_EN.md (English)](./EcoAI/EcoAI_EN.md)  
+  - [EcoAI_KR.md (Korean)](./EcoAI/EcoAI_KR.md)
+
 ---
 
 ## Ecosystem Integration
