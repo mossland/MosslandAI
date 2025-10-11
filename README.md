@@ -88,6 +88,15 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
   - [EcoAI_EN.md (English)](./EcoAI/EcoAI_EN.md)  
   - [EcoAI_KR.md (Korean)](./EcoAI/EcoAI_KR.md)
 
+### 13. GreenLedger: Blockchain-Verified Energy Traceability and Tokenized Eco Credits
+- **Description**:  
+  This research introduces **GreenLedger**, a blockchain-based framework for transparent and verifiable energy traceability.  
+  Developed jointly by **Mossland Lab** and **Aetherion Co., Ltd.**, the project integrates AI-driven digital twin analytics, IoT data, and smart contracts to certify energy efficiency and carbon reduction in a tamper-proof manner.  
+  Verified results are issued as **Eco Credit Tokens (ECTs)**, enabling a decentralized ecosystem for ESG rewards, carbon markets, and MOC-linked green economy models.
+- **Resources**:
+  - [GreenLedger_EN.md (English)](./DigitalTwin/GreenLedger/GreenLedger_EN.md)  
+  - [GreenLedger_KR.md (Korean)](./DigitalTwin/GreenLedger/GreenLedger_KR.md)
+
 ---
 
 ## Ecosystem Integration
