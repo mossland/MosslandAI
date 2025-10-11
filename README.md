@@ -72,6 +72,13 @@ Our most recent initiatives are centered on enhancing DAO efficiency and user en
 - **Resources**:
   - [KRW-Pegged Stablecoin Design for Mossland](./Stablecoin_Research/KRW_Pegged_Stablecoin_for_Mossland.md)
 
+### 11. AI-GovRisk: Autonomous Governance Risk Intelligence for DAO Ecosystems
+- **Description**:  
+  This research proposes an AI-powered governance analysis framework for DAOs. It predicts proposal risks, estimates success likelihood, and automatically generates improvement suggestions to enhance transparency, trust, and efficiency in decentralized governance.
+- **Resources**:
+  - [AI-GovRisk_EN.md (English)](./GovernanceRisk/AI-GovRisk_EN.md)  
+  - [AI-GovRisk_KR.md (Korean)](./GovernanceRisk/AI-GovRisk_KR.md)
+
 ---
 
 ## Ecosystem Integration
