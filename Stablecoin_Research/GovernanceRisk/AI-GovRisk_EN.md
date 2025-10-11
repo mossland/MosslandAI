@@ -86,9 +86,7 @@ Each proposal receives a **RiskScore (0–1)** representing overall governance u
 Using **Graph Neural Networks (GNNs)**, proposals are connected through shared authors, voters, and topical embeddings.
 The combined model estimates a **Success Likelihood Score (SLS)**:
 
-[
-SLS = \sigma(W_1 f_{text} + W_2 f_{graph} + W_3 f_{context})
-]
+$SLS = \sigma(W_1 \cdot f_{text} + W_2 \cdot f_{graph} + W_3 \cdot f_{context})$
 
 This enables predictive modeling for proposal outcomes and strategy simulations.
 
