@@ -25,6 +25,7 @@ Welcome to the **Mossland DigitalTwin Research** repository. Our mission is to h
 
 Beyond core building science, our research explores:
 
+* **Open SDB (Software‑Defined Building)**: An open‑source initiative redesigning legacy building infrastructures into a programmable operating system. It enables closed‑loop control and seamless interoperability, serving as the foundation for our Digital Twin applications. [View Repository](https://github.com/mossland/open-sdb/tree/main)
 * **Metaverse & XR Visualisation**: Streaming real‑time Digital Twin states into Mossland’s immersive worlds.
 * **Tokenised Energy Markets**: Leveraging Mosscoin for carbon‑based incentives and demand‑response programmes.
 * **AI Twin Agents**: Deploying LLM‑powered copilots that translate facility data into plain‑language insights for operators and tenants.
