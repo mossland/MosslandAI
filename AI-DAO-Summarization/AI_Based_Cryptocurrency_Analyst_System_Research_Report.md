@@ -4,7 +4,7 @@
 
 Traditional financial market analysts, especially in stock markets, have played a key role in researching assets and providing investment insights for fund managers or individual investors. However, **the cryptocurrency market** operates 24/7 globally and involves multiple complex data sources – from exchange feeds (order books, trading volumes) to **on-chain blockchain data**, **social media sentiment**, and **real-time news**. This constantly changing, data-intensive environment poses significant challenges for human analysts to handle manually.
 
-**Artificial Intelligence (AI) analysts** address this issue by continuously monitoring and analyzing large volumes of data, detecting patterns, providing insights, and even generating user-friendly reports. This document discusses an **AI-based cryptocurrency analyst system**, outlining its key functionalities, AI-specific innovations, UX design for general investors, a high-level GPT-4/4.5 implementation approach, and system architecture. The goal is to demonstrate how an AI analyst can replace or augment human analysts to deliver **fast, data-driven, and personalized** insights in the crypto market.
+**Artificial Intelligence (AI) analysts** address this issue by continuously monitoring and analyzing large volumes of data, detecting patterns, providing insights, and even generating user-friendly reports. This document discusses an **AI-based cryptocurrency analyst system**, outlining its key functionalities, AI-specific innovations, UX design for general investors, a high-level LLM implementation approach, and system architecture. The goal is to demonstrate how an AI analyst can replace or augment human analysts to deliver **fast, data-driven, and personalized** insights in the crypto market.
 
 ---
 
@@ -83,9 +83,9 @@ Unlike traditional fund managers, **general crypto enthusiasts** often prefer si
 
 ---
 
-## 5. High-level GPT-4 / GPT-4.5 API Implementation Example
+## 5. High-level LLM API Implementation Example
 
-This section shows how **GPT-4 (or GPT-4.5)** can be integrated into a multi-stage analysis pipeline for **advanced** cryptocurrency insights. Key approaches:
+This section shows how a modern large language model — using the latest available models (as of 2026), such as OpenAI's GPT-5.5 (the flagship since April 2026) or a comparable current-generation model — can be integrated into a multi-stage analysis pipeline for **advanced** cryptocurrency insights. (Earlier models such as GPT-4 and GPT-4.5 are now legacy and have been retired.) Key approaches:
 
 - **Multi-Stage Prompting**:  
   - Stage A: Summarize raw market data into a concise JSON structure.  
@@ -97,10 +97,10 @@ This section shows how **GPT-4 (or GPT-4.5)** can be integrated into a multi-sta
   - Optionally use OpenAI’s *function calling* feature to enforce strict JSON responses or to chain specialized “tools” (e.g., on-chain lookups).
 
 - **Vector DB Integration**:  
-  - Store historical data or domain-specific knowledge in a vector database (e.g., Pinecone, Milvus).  
-  - Let GPT retrieve relevant context for more accurate, topic-specific analysis.
+  - Store historical data or domain-specific knowledge in a vector database (e.g., Pinecone, Qdrant, Weaviate, pgvector, Milvus).  
+  - Let the LLM retrieve relevant context for more accurate, topic-specific analysis.
 
-By carefully designing system prompts, roles, and messages, we ensure GPT-4/4.5 provides **structured, reliable** analyses that can be fed into dashboards, alert systems, or automated trading algorithms.
+By carefully designing system prompts, roles, and messages, we ensure the LLM provides **structured, reliable** analyses that can be fed into dashboards, alert systems, or automated trading algorithms.
 
 ---
 
@@ -120,8 +120,8 @@ flowchart LR
     subgraph AI_Analyst_Engine
         D["Data Aggregation"]
         E["Preprocessing & Vector DB"]
-        F["GPT-4/4.5 Stage A Summarizer"]
-        G["GPT-4/4.5 Stage B Deep Analysis"]
+        F["LLM Stage A Summarizer"]
+        G["LLM Stage B Deep Analysis"]
         H["Report Generation (Stage C)"]
         I["Alerts & Recommendations"]
     end
@@ -150,8 +150,8 @@ flowchart LR
 **Key points**:
 - **Data Aggregation (D)** collects raw on-chain, exchange, and social data.  
 - **Preprocessing & Vector DB (E)** normalizes data, extracts features, and stores historical vectors for GPT retrieval.  
-- **GPT-4/4.5 Stage A (F)**: Summarizes raw data → structured JSON.  
-- **GPT-4/4.5 Stage B (G)**: Performs advanced market insights, risk analysis, potential function calling.  
+- **LLM Stage A (F)**: Summarizes raw data → structured JSON.  
+- **LLM Stage B (G)**: Performs advanced market insights, risk analysis, potential function calling.  
 - **Report Generation (H)** packages final results for user-friendly formats.  
 - **Alerts & Recommendations (I)** triggers real-time signals.  
 - The UI components (J, K, L, M) handle dashboards, chat-based interactions, notifications, and scheduled reports.
@@ -163,7 +163,7 @@ flowchart TD
     Sources[Blockchain, Exchanges, Social Data] --> Ingestion[Real-Time / Batch Ingestion]
     Ingestion --> Storage[(Data Lake)]
     Storage --> VectorDB[(Vector DB for Historical Insights)]
-    Storage --> AIAnalysis[Multi-Stage GPT-4/4.5 Analysis Pipeline]
+    Storage --> AIAnalysis[Multi-Stage LLM Analysis Pipeline]
     VectorDB --> AIAnalysis
     AIAnalysis --> Insights[Market Insights, JSON Summaries]
     Insights --> Distribution[Distribution Layer]
@@ -212,7 +212,7 @@ sequenceDiagram
 
 An **AI-based cryptocurrency analyst system** can offer unparalleled capabilities for real-time data integration, pattern detection, and personalized recommendations in the ever-evolving crypto market. By leveraging:
 
-- **Advanced GPT-4/4.5 Multi-stage Prompting** for structured insights  
+- **Advanced Multi-Stage LLM Prompting** for structured insights  
 - **Function Calling** and **Vector DB** for robust retrieval and consistent JSON outputs  
 - **User-centric UX** with chat-based Q&A, storytelling explanations, simplified feeds, and gamification  
 

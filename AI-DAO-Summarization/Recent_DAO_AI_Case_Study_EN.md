@@ -1,4 +1,4 @@
-# Recent Project Case Study on DAO and AI-Based Improvement Strategies
+# A Study on Recent DAO Cases and AI-Based Improvement Strategies
 
 ## Introduction
 
@@ -10,7 +10,9 @@ This paper analyzes recent DAO cases and proposes AI-based improvement strategie
 
 This section examines the characteristics and governance challenges of prominent DAOs such as MakerDAO, Aave DAO, and Arbitrum DAO. Table 1 provides a summary of the key features and governance issues identified in each case.
 
-### 1.1 MakerDAO Case
+### 1.1 MakerDAO (now Sky) Case
+
+> **Note (as of mid-2026)**: This MakerDAO case is described as of early 2024. On August 27, 2024, MakerDAO rebranded to **Sky Protocol**: the MKR governance token migrated to SKY (1 MKR = 24,000 SKY; the Phase One governance upgrade deployed in May 2025 retired MKR from governance, leaving SKY as the sole governance token), the DAI stablecoin gained a 1:1 successor, **USDS**, and the SubDAOs were rebranded as "Stars" (e.g., Spark). The MKR/DAI/SubDAO naming below should be read as reflecting the early-2024 state.
 
 MakerDAO operates the decentralized stablecoin DAI, with governance decisions (e.g., selection of collateral types and determination of stability fees) made by MKR token holders [1].
 
@@ -36,7 +38,7 @@ Aave is a leading DeFi lending protocol governed by the AAVE token [2].
   - As of early 2024, Aave’s governance participation rate is approximately 2.4%, with a significant portion of delegated votes not being cast [2].  
   - High gas fees further discourage small token holders from participating [2].
 
-In response, the Aave community is exploring alternatives such as Layer 2 solutions or off-chain Snapshot voting to implement “gasless voting” [10] and is conducting research to enhance participation incentives [2].
+In response, the Aave community is exploring alternatives such as Layer 2 solutions or off-chain Snapshot voting to implement “gasless voting” [10] and is conducting research to enhance participation incentives [2]. (Note: the ~2.4% figure above is an early-2024 data point; Aave governance participation has since risen substantially, with a December 2025 vote setting a participation record of roughly 1.8 million AAVE of voting power.)
 
 ### 1.3 Arbitrum DAO Case
 
@@ -54,8 +56,8 @@ Arbitrum, a Layer-2 scaling solution for Ethereum, initiated its DAO governance 
 
 | DAO Case         | Key Features                                                        | Governance Issues                                                         |
 |------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------|
-| **MakerDAO**     | Decentralized stablecoin issuance and lending (governed by MKR token) | Low voter participation due to whale dominance; complex proposals; excessive founder influence [1] |
-| **Aave DAO**     | Decentralized DeFi lending platform (governed by AAVE token)          | Very low voter turnout (~2.4%); high gas fees deterring small holders; concentration of votes among whales [2], [9] |
+| **MakerDAO**<br>(now Sky) | Decentralized stablecoin issuance and lending (governed by MKR token; rebranded to Sky Protocol in Aug 2024, with MKR→SKY and DAI→USDS) | Low voter participation due to whale dominance; complex proposals; excessive founder influence [1] |
+| **Aave DAO**     | Decentralized DeFi lending platform (governed by AAVE token)          | Very low voter turnout (~2.4% as of early 2024); high gas fees deterring small holders; concentration of votes among whales [2], [9] |
 | **Arbitrum DAO** | Layer-2 governance for Ethereum (ARB token launched in 2023)          | Overly extensive initial proposal; pre-approved token transfers undermining trust [3], [11] |
 
 ## 2. AI-Based Improvement Strategies for DAOs
@@ -71,7 +73,7 @@ By leveraging Natural Language Processing (NLP) techniques, lengthy proposals an
   Reduces information overload and enables rapid comprehension of core issues.
   
 - **Applications**:  
-  - MakerDAO is planning to deploy a Governance AI tool (GAIT) as part of its Endgame Plan [1].  
+  - MakerDAO (now Sky) proposed deploying a Governance AI tool (GAIT) as part of its Endgame Plan; as of mid-2026 this remains a roadmap item on Sky's later-phase roadmap, and full deployment is not officially confirmed [1].  
   - The Aave community uses an AI summarization bot (x23) to condense forum discussions [6].  
   - NEAR Protocol’s governance team has implemented an AI-powered chatbot to provide real-time Q&A support [6].
 
@@ -80,7 +82,7 @@ By leveraging Natural Language Processing (NLP) techniques, lengthy proposals an
 An AI-based decision support system can learn from historical outcomes of similar proposals, thereby predicting the potential benefits and risks of new proposals. Additionally, real-time analysis of on-chain and market data can detect anomalies and recommend optimal alternatives.
 
 - **Applications**:  
-  - MakerDAO’s GAIT tool assists with proposal summarization, data verification, and even the generation of new proposals [6].  
+  - MakerDAO’s (now Sky’s) GAIT tool is envisioned to assist with proposal summarization, data verification, and even the generation of new proposals [6].  
   - Platforms such as Aave and Compound are employing simulation-based risk assessment tools developed by Gauntlet [4].
 
 ### 2.3 AI-Based Automated Voting and Delegated Voting System

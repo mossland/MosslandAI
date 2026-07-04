@@ -34,7 +34,7 @@
    - 6.3 Wireframe Prototype (Textual)  
    - 6.4 Representative Pseudo-Code  
 8. [Conclusion and Future Directions](#conclusion-and-future-directions)  
-9. [References](#12-references)
+9. [References](#7-references)
 
 ---
 
@@ -191,7 +191,7 @@ Natural Language Processing (NLP) is fundamental when building chatbots or voice
   - Periodically fine-tune the language model with real user queries, ensuring domain-specific jargon or new governance concepts are recognized.
 
 ### 3.2 Multi-Modal Interaction: Voice, Chatbots, and Conversational UIs
-Recent advancements in speech-to-text and text-to-speech technologies have enabled more **inclusive** user interfaces:
+Advances in speech-to-text and text-to-speech technologies enable more **inclusive** user interfaces:
 
 - **Voice Interfaces**  
   - Offer hands-free engagement, valuable during community calls or for individuals with accessibility requirements.  
@@ -334,7 +334,7 @@ flowchart TD
 ```
 **Explanation**:  
 - The **Backend** orchestrates data retrieval from the blockchain and forums, packaging relevant context for the **AIEngine**.  
-- The **AIEngine** (e.g., GPT-4 or custom variant) processes summarization or Q&A tasks.  
+- The **AIEngine** (e.g., a modern LLM such as a GPT-5-class model as of mid-2026, or a custom variant; the named model is illustrative and interchangeable) processes summarization or Q&A tasks.  
 - The **UI** merges AI outputs with verified data, ensuring consistency and transparency.
 
 #### 6.2.2 Sequential User Interaction
@@ -543,7 +543,7 @@ By carefully orchestrating **user-centric design**, **technical rigor**, and **c
 
 ---
 
-## 12. References
+## 7. References
 
 [1] T. Sharma *et al*., “Future of Algorithmic Organization: Large Scale Analysis of Decentralized Autonomous Organizations (DAOs),” *arXiv preprint* arXiv:2410.13095, 2024.
 

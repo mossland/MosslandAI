@@ -100,7 +100,7 @@ Enterprise IT : Cloud Analytics, Digital Twin, FDD, AI Optimizer
 
 ### Protocols
 
-* **BACnet/IP MSTP**, **Modbus RTU/TCP**, **LonWorks**, OPC UA, **MQTT** (신규 IoT)
+* **BACnet/IP, BACnet MS/TP**, **Modbus RTU/TCP**, **LonWorks**, OPC UA, **MQTT** (신규 IoT)
 * 포인트 네이밍 규칙 샘플: `BLDG1_AHU03.SUPPLY_AIR_TEMP`
 
 ## 7. 센서·데이터 포인트 목록 (실무 예시)

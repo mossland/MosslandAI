@@ -1,6 +1,8 @@
 # DAO Tendency Prototype
 
-This project is a prototype experiment to analyze user tendencies in a DAO (Decentralized Autonomous Organization) by combining survey responses, historical activity data, and user opinions processed via OpenAI's GPT-4 API. The prototype simulates a virtual DAO member ("Alice") with sample data and aggregates her tendencies across various dimensions such as:
+This project is a prototype experiment to analyze user tendencies in a DAO (Decentralized Autonomous Organization) by combining survey responses, historical activity data, and user opinions processed via OpenAI's API. The prototype simulates a virtual DAO member ("Alice") with sample data and aggregates her tendencies across various dimensions such as:
+
+> **Note (as of 2026):** This prototype was originally written against OpenAI's GPT-4 and the legacy `openai` Python SDK (`openai>=0.27.0`, the `openai.ChatCompletion` interface). Both are now outdated. Current OpenAI models are the GPT-5.x family (GPT-5.5 is the shipping flagship as of mid-2026), and the current `openai` package (the 1.x-and-later client interface; latest is 2.x), pinned as `openai>=1.0.0`, uses an instantiated client — `client = OpenAI()` then `client.chat.completions.create(...)` with attribute access such as `response.choices[0].message.content`. To run this prototype, bump `requirements.txt` to `openai>=1.0.0`, migrate `dao_tendency_prototype.py` from the module-level `openai.api_key` / `openai.ChatCompletion.create` calls to the client interface, and target a current model (e.g. GPT-5.5).
 
 - **Progressive vs Conservative**
 - **Economic vs Social**

@@ -10,30 +10,32 @@ As the global landscape of digital currencies evolves, stablecoins pegged to fia
 
 ## 1. Introduction
 
-Stablecoins are digital assets designed to minimize price volatility by pegging their value to a reserve asset, such as fiat currency. Globally, USD-based stablecoins have become instrumental in digital asset trading and financial innovation. Korea, despite its advanced digital infrastructure and active crypto market, does not yet have a regulated KRW-pegged stablecoin. However, recent legislative and institutional developments indicate a shifting policy stance.
+Stablecoins are digital assets designed to minimize price volatility by pegging their value to a reserve asset, such as fiat currency. Globally, USD-based stablecoins have become instrumental in digital asset trading and financial innovation. Korea, despite its advanced digital infrastructure and active crypto market, does not yet have a regulated KRW-pegged stablecoin. As of the June 2025 authoring of this paper, legislative and institutional developments indicated a shifting policy stance; as of mid-2026, however, that shift has stalled at the legislative stage rather than advanced to enactment (see Section 2.1).
 
 ## 2. Regulatory Developments in Korea
 
 ### 2.1 Legislative Proposals
 
-The Korean government and ruling party are advancing the "Digital Asset Basic Act" to provide a legal foundation for stablecoin issuance. Key elements include:
+The Korean government and ruling party have been advancing the "Digital Asset Basic Act" to provide a legal foundation for stablecoin issuance. Introduced by Rep. Min Byung-deok (Democratic Party) on June 10, 2025, the bill proposed key elements including:
 
 * Mandatory financial regulatory approval (by the Financial Services Commission)
 * Capital adequacy requirements (minimum KRW 500 million for issuers)
 * Real-time reserve disclosure and audit obligations
 * Establishment of a Digital Asset Committee and Korea Digital Asset Association as supervisory bodies
 
+**Status update (as of mid-2026):** The Digital Asset Basic Act has not passed and remains stalled in the National Assembly. It was repeatedly delayed through late 2025 into 2026 amid an issuer dispute—the Bank of Korea insisting stablecoins be issued only by consortia with 51%+ bank ownership, while the Financial Services Commission warned this would stifle innovation. The National Policy Committee left the bill off the agenda at its final subcommittee review before recess (around May 12, 2026), and lawmakers did not revisit it before the June 3, 2026 local elections. The stablecoin provisions are now being carved out for separate, standalone legislation (tracking separately from the security token offering track), with substantive debate pushed to the second half of 2026.
+
 ### 2.2 Executive Policy Direction
 
-President Lee Jae-myung and Presidential Policy Chief Kim Yong-beom have prioritized the institutionalization of KRW-pegged stablecoins. Kim argues that stablecoins should not be suppressed, but designed by public institutions to preserve monetary sovereignty. His background in finance and blockchain research positions him as a key architect of Korea’s forthcoming digital currency regime.
+President Lee Jae-myung and Presidential Chief of Staff for Policy Kim Yong-beom have prioritized the institutionalization of KRW-pegged stablecoins. Kim argues that stablecoins should not be suppressed, but designed by public institutions to preserve monetary sovereignty. His background in finance and blockchain research positions him as a key architect of Korea’s digital currency regime. As of mid-2026, Kim remains in office as presidential chief of staff for policy and continues to be active on stablecoin and digital-currency policy; the enabling legislation, however, has been deferred rather than delivered, having been delayed through 2025–2026 with its stablecoin provisions split into separate legislation (see Section 2.1).
 
 ### 2.3 Central Bank Perspective
 
-The Bank of Korea has voiced concerns over privately issued KRW stablecoins potentially undermining monetary policy. It advocates a cautious, phased approach—starting with commercial banks as authorized issuers. The central bank supports utilizing its experience from CBDC pilot programs (e.g., Project Han-Gang) to supervise reserve management and payment infrastructure.
+The Bank of Korea has voiced concerns over privately issued KRW stablecoins potentially undermining monetary policy. It advocates a cautious, phased approach—starting with commercial banks as authorized issuers. The central bank supports utilizing its experience from CBDC programs (e.g., Project Hangang) to supervise reserve management and payment infrastructure. As of mid-2026, Project Hangang has progressed well beyond an early pilot: the Bank of Korea launched Phase 2 on March 18, 2026, expanding to nine commercial banks (KB Kookmin, Shinhan, Woori, Hana, IBK, NH Nonghyup, Busan Bank, plus newly added Kyongnam Bank and iM Bank). Phase 2 introduced real-world use cases—including government subsidy and voucher disbursements using bank-issued deposit tokens backed by wholesale CBDC, nationwide consumer payments, and peer-to-peer transfers—with large-scale real-transaction testing across all nine banks planned for the second half of 2026.
 
 ### 2.4 Issuer Debate
 
-There is debate over whether only banks should be allowed to issue KRW stablecoins. While the Bank of Korea supports a bank-centric model, fintech companies and blockchain developers advocate for broader participation under strict reserve and audit requirements. Proposed frameworks resemble EU’s MiCA regulation.
+There is debate over whether only banks should be allowed to issue KRW stablecoins. While the Bank of Korea supports a bank-centric model (favoring consortia with 51%+ bank ownership), fintech companies and blockchain developers advocate for broader participation under strict reserve and audit requirements. Proposed frameworks resemble EU’s MiCA regulation. As of mid-2026, this issuer debate has become the primary point of legislative deadlock: it stalled the Digital Asset Basic Act through 2025–2026 and prompted the carve-out of stablecoin provisions into separate, standalone legislation (see Section 2.1).
 
 ## 3. Market Dynamics and Institutional Readiness
 
@@ -45,7 +47,7 @@ USD-based stablecoins account for tens of trillions of KRW in monthly trading vo
 
 Leading Korean banks and fintech firms have formed consortia and working groups to prepare for regulated stablecoin issuance. Initiatives include:
 
-* Bank-issued deposit tokens linked to central bank reserves (e.g., via Project Han-Gang)
+* Bank-issued deposit tokens linked to central bank reserves (e.g., via Project Hangang)
 * Private sector pilots of fully collateralized KRW stablecoins
 
 ## 4. Comparative Analysis: USD vs KRW Stablecoins
@@ -93,6 +95,12 @@ A regulated KRW-pegged stablecoin represents a unique opportunity for Korea to a
 * [https://biz.sbs.co.kr/article/20000239021](https://biz.sbs.co.kr/article/20000239021)
 * [https://www.seoul.co.kr/news/economy/finance/2025/06/09/20250609018001](https://www.seoul.co.kr/news/economy/finance/2025/06/09/20250609018001)
 * [https://www.fnnews.com/news/202506081845075795](https://www.fnnews.com/news/202506081845075795)
+
+**2026 Status Updates (legislation and CBDC pilot):**
+
+* [https://www.coindesk.com/policy/2025/12/30/south-korea-s-long-awaited-crypto-law-stalls-over-who-can-issue-stablecoins](https://www.coindesk.com/policy/2025/12/30/south-korea-s-long-awaited-crypto-law-stalls-over-who-can-issue-stablecoins)
+* [https://www.cryptopolitan.com/south-korea-delays-digital-asset-basic-act/](https://www.cryptopolitan.com/south-korea-delays-digital-asset-basic-act/)
+* [https://www.coindesk.com/business/2026/03/18/bank-of-korea-adds-two-banks-to-digital-won-trials-as-real-world-testing-begins](https://www.coindesk.com/business/2026/03/18/bank-of-korea-adds-two-banks-to-digital-won-trials-as-real-world-testing-begins)
 
 **Research, Industry Reports, and International Frameworks:**
 

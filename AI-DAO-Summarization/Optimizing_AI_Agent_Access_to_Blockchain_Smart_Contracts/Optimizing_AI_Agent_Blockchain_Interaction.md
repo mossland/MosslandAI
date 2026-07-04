@@ -639,7 +639,7 @@ As both AI and blockchain ecosystems evolve, so too will their intersection. By 
 
 1. [Ethereum White Paper](https://ethereum.org/en/whitepaper/)  
 2. [The Graph Documentation](https://thegraph.com/docs/)  
-3. [web3.js GitHub Repo](https://github.com/ChainSafe/web3.js)  
+3. [web3.js GitHub Repo](https://github.com/ChainSafe/web3.js) *(deprecated/legacy: ChainSafe sunset web3.js in 2024 and it is no longer actively maintained; for new AI-agent code prefer a maintained library such as [viem](https://viem.sh/) or ethers.js below)*  
 4. [ethers.js GitHub Repo](https://github.com/ethers-io/ethers.js/)  
 5. [Solidity Documentation](https://docs.soliditylang.org/)  
 6. [OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)  

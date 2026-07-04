@@ -14,7 +14,7 @@
 7. **AI 기반 요약 및 전달 방식 (AI-Powered Summarization and Communication)**
 8. **시스템 구성도 (System Architecture)**
 9. **연구 프로세스 (Research Process)**
-10. **산업 적용 사례 및 최신 동향 (Industry Applications and Research Trends)**
+10. **산업 적용 사례 및 최신 동향 (Industry Applications and Latest Trends)**
 11. **결론 (Conclusion)**
 12. **참고문헌 (References)**
 
@@ -30,7 +30,7 @@
 ## 2. 연구 배경 (Background and Motivation)
 1. **정보 과부하 (Information Overload)**: DAO는 개방형 조직이므로 매일 새로운 제안이 올라오고, 포럼이나 소셜 채널에서 많은 토론이 발생합니다. 구성원들은 모든 정보를 제때 읽고 이해하기 어렵습니다 [2].  
 2. **다양한 유저 성향 (Diverse User Tendencies)**: 구성원마다 투자를 중시하는지, 혹은 커뮤니티 가치를 중시하는지, 단기적인 성과를 보는지, 혹은 장기적인 관점에서 발전을 바라보는지 등 차이가 큽니다. 모든 구성원에게 동일한 형태로 정보를 제공하면, 중요한 내용을 놓치거나 참여 의지를 잃기 쉽습니다 [3].  
-3. **AI 기술의 발전 (Advances in AI)**: 최근 GPT 계열과 같은 대형 언어 모델(LLM)의 발전으로 텍스트 요약과 자연어 처리 성능이 크게 향상되었습니다. 이를 효율적으로 응용한다면, DAO 거버넌스에서도 높은 가치 창출이 가능할 것으로 보입니다 [4].
+3. **AI 기술의 발전 (Advances in AI)**: 최근 대형 언어 모델(LLM)의 발전으로 텍스트 요약과 자연어 처리 성능이 크게 향상되었습니다. 2026년 중반 기준으로 OpenAI의 GPT-5.x 계열(현행 주력 모델 GPT-5.5, 프리뷰 단계의 GPT-5.6 Sol/Terra/Luna)과 같은 최신 세대 모델이 이를 주도하고 있으며, GPT-3.5·GPT-4 등 이전 세대 모델은 레거시로 분류됩니다. 이러한 최신 모델을 효율적으로 응용한다면, DAO 거버넌스에서도 높은 가치 창출이 가능할 것으로 보입니다 [4].
 
 ---
 
@@ -48,7 +48,7 @@
 - 하지만 **개인화(Personalization)** 기능이나 **정교한 요약(Summarization)** 기능은 아직 초기 단계입니다.
 
 ### 4.2 AI 기반 텍스트 요약
-- OpenAI의 GPT 모델 계열(GPT-3.5, GPT-4 등)을 활용하면, **추상적 요약(Abstractive Summarization)**까지 가능해집니다 [4].  
+- OpenAI의 최신 GPT 모델 계열(2026년 기준 GPT-5.x, 예: GPT-5.5)을 활용하면, **추상적 요약(Abstractive Summarization)**까지 가능해집니다. GPT-3.5·GPT-4는 현재 레거시 모델입니다 [4].  
 - 특히 **Prompt Engineering** 기법을 통해, 특정 유저의 성향을 반영한 요약 문장을 생성하는 방식이 연구되고 있습니다 [4].
 
 ### 4.3 사용자 성향 분석
@@ -107,7 +107,7 @@
 ## 7. AI 기반 요약 및 전달 방식 (AI-Powered Summarization and Communication)
 
 ### 7.1 요약 기법 (Summarization Techniques)
-- **추상적 요약(Abstractive Summarization)**: GPT-4 등 대형 언어 모델을 사용해, 원문의 핵심 정보를 새로 문장화.  
+- **추상적 요약(Abstractive Summarization)**: 최신 세대 대형 언어 모델(2026년 기준 GPT-5.x 계열 등)을 사용해, 원문의 핵심 정보를 새로 문장화.  
 - **키포인트 요약(Key Point Extraction)**: 제안의 핵심 주장, 찬성 논리, 반대 논리를 항목별로 정리.  
 - **유저 성향 기반 맞춤형 요약(Personalized Summaries)**: 보수적인 성향의 유저에게는 리스크와 안정성을, 진보적인 성향에는 혁신성과 기회를 강조.
 
@@ -143,7 +143,7 @@ flowchart LR
 ```mermaid
 flowchart TB
     A["Raw Proposal / Discussion Text"] --> B["Preprocessing\n(Tokenization, Cleaning)"]
-    B --> C["LLM-based Summarization\n(GPT-4, etc.)"]
+    B --> C["LLM-based Summarization\n(current-gen LLM, e.g. GPT-5-class)"]
     C --> D["Post-processing\n(Key Points, Pros/Cons)"]
     E["User Profile\n(Tendency)"] --> C
     D --> F["Personalized Summary Output"]
@@ -161,7 +161,7 @@ flowchart TB
 
 ### 9.2 2단계: 맞춤형 요약 및 투표 과정 (Personalized Summaries & Voting)
 1. **프로포절/포럼 데이터 수집**: 실시간 혹은 일정 주기로 내용 파싱.  
-2. **AI 요약 모듈**: GPT API 호출로 문서 요약 및 재구성.  
+2. **AI 요약 모듈**: 최신 LLM API(2026년 기준 GPT-5.x 계열 등) 호출로 문서 요약 및 재구성.  
 3. **성향 반영**: 유저 프로필 DB를 참조하여, 요약 문구를 개인화.  
 4. **전달**: 이메일, 푸시 등으로 유저에게 발송.  
 5. **투표 진행**: 유저가 더 쉽게 내용 이해 후 투표.
@@ -196,9 +196,11 @@ sequenceDiagram
 
 ---
 
-## 10. 산업 적용 사례 및 최신 동향 (Industry Applications and Research Trends)
+## 10. 산업 적용 사례 및 최신 동향 (Industry Applications and Latest Trends)
 
 ### 10.1 실제 DAO에서의 AI 활용
+아래 사례는 2023~2024년 시점의 초기 동향을 기준으로 정리한 것이며, 2026년 중반 기준으로는 AI 기반 DAO 거버넌스 도구가 초기 실험 단계를 넘어 상당히 성숙했습니다(제안 요약, 투표 추천, AI 에이전트 기반 자동 참여 등이 다수 플랫폼에서 상용화되는 추세).
+
 - **Tally**: 특정 DAO에서 AI 도입을 제안하는 “AI-Powered Governance Enhancement” 프로포절이 제출되었으며, 과거 투표 기록을 분석해 자동 추천/분석을 제공하려는 시도가 있음 [2].  
 - **Aragon**: 거버넌스 포럼에 AI 요약 기능에 대한 제안이 올라오고 있으며, ChatGPT 등을 이용해 거버넌스 토론을 요약한 사례도 나타남 [3].
 
@@ -213,7 +215,7 @@ sequenceDiagram
 본 연구는 **DAO 거버넌스에서 발생하는 정보 과부하와 낮은 참여도** 문제를 해결하기 위해, **AI 기반 유저 성향 분석**과 **맞춤형 투표 요약**을 결합한 모듈을 제안하였습니다. 구체적으로,
 
 1. **유저 성향 분석**: 설문조사, 과거 기록 분석, NLP를 통해 **보수적 vs. 진보적, 경제적 이익 vs. 사회적 가치, 단기 vs. 장기** 등 축을 정의하여 프로파일링 [1][2][3].  
-2. **AI 요약 모듈**: GPT 계열 모델을 활용해 제안·포럼 내용을 추상적으로 요약하고, 유저 성향에 맞게 정보를 재구성하여 개인화 [4].  
+2. **AI 요약 모듈**: 최신 세대 GPT 계열 모델(2026년 기준 GPT-5.x 등)을 활용해 제안·포럼 내용을 추상적으로 요약하고, 유저 성향에 맞게 정보를 재구성하여 개인화 [4].  
 3. **지속적 성향 업데이트**: 투표 결과와 커뮤니티 트렌드를 반영해 사용자의 변화를 추적, 정교한 맞춤형 정보 제공.  
 
 이로써 DAO 구성원들은 제안의 핵심을 빠르게 파악할 수 있고, 본인의 가치관에 맞춰 결정할 수 있어 참여 효율을 높일 수 있습니다. 향후에는 **AI 에이전트가 유저를 대신해 투표**하거나 **포럼에서 발언**하는 기능까지 확장할 여지가 있습니다. 또한, 본 연구에서 제안된 프로세스와 모듈은 다른 DAO 툴링과 결합하여 하나의 서비스 형태로 제공될 수 있습니다.

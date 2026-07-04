@@ -8,7 +8,7 @@
 
 ## Abstract
 As AI models continue to scale and blockchain operations grow more complex, energy consumption and sustainability have emerged as critical challenges.  
-**EcoAI** proposes an optimization framework designed to achieve **energy efficiency**, **cost reduction**, and **carbon minimization** across AI and blockchain-integrated systems.  
+**EcoAI** proposes an optimization framework designed to achieve **energy efficiency**, **cost reduction**, **performance optimization**, and **carbon minimization** across AI and blockchain-integrated systems.  
 
 This research introduces a unified infrastructure model that dynamically monitors workload distribution, predicts energy consumption, and optimizes computational efficiency using reinforcement learning and sustainability-aware scheduling.  
 EcoAI aims to establish a standard for **green AI infrastructure** within the Web3 ecosystem.
@@ -19,13 +19,14 @@ EcoAI aims to establish a standard for **green AI infrastructure** within the We
 Recent advances in large-scale AI—such as LLMs, diffusion models, and GNNs—have significantly increased GPU workloads and power demands.  
 Similarly, blockchain systems face growing challenges in transaction verification and smart contract execution efficiency.  
 
-Within the Mossland ecosystem, AI-driven components (e.g., AI-based governance, DAO summarization agents, and blockchain analytics models) contribute to substantial computational overhead.  
+Within the Mossland ecosystem, AI and blockchain are tightly coupled, and diverse services—such as **AI-Driven DAO**, **AI Agent-based governance**, and **AI-Blockchain interaction**—consume substantial GPU and node computational resources.  
 Thus, an integrated approach to **AI energy optimization and sustainable resource allocation** has become essential.
 
 **EcoAI** addresses this need by combining:
 - AI workload profiling and real-time energy monitoring  
 - Multi-objective optimization for cost, energy, and latency  
 - On-chain carbon certification and incentive mechanisms  
+- Standardization of **sustainable AI** within the Web3 ecosystem  
 
 ---
 
@@ -37,7 +38,7 @@ flowchart TD
     B --> C["Optimization Policy Engine"]
     C --> D["Real-Time Scheduler"]
     D --> E["Carbon Reduction Report & Dashboard"]
-````
+```
 
 | Module                           | Description                                                          | Core Technology                             |
 | -------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- |

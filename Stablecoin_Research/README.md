@@ -38,4 +38,4 @@ For detailed inquiries or contributions, please contact the MosslandAI research 
 
 ---
 
-© MosslandAI, 2025
+© MosslandAI, 2025-2026

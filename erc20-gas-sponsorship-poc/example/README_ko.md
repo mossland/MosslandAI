@@ -1,5 +1,7 @@
 # Gasless ERC-20 Transfer · Sepolia · Alchemy Account Kit
 
+[English](./README.md) | **한국어**
+
 MetaMask EOA 지갑만으로 **가스비를 직접 지불하지 않고** ERC-20 토큰을 전송하는 PoC 프로젝트입니다.
 Alchemy Account Kit(모듈러 Smart Account) + Gas Manager(Paymaster) + ERC-20 `permit & transferFrom` 조합을 통해 **가스리스 토큰 전송 UX**를 구현·검증합니다.
 
@@ -100,10 +102,11 @@ graph TD
 
 ## 4. 사전 준비 사항
 
-1. **Node.js 18+**
+1. **Node.js 20.19+ 또는 22.12+** (Vite 7 요구 사항. Vite 7은 Node.js 18 EOL(2025년 4월 말) 이후 Node 18 지원을 중단함)
 2. **MetaMask 브라우저 확장 프로그램**
 3. **Alchemy Account Kit / Gas Manager 설정**
 
+   - Alchemy 계정 및 App
    - API Key
    - Gas Policy ID
 
@@ -174,19 +177,27 @@ pnpm dev
 
 ### 7.4 「④ [EOA 잔고] 가스리스 GST 전송」(핵심)
 
-- 내부 동작:
+1. EOA에 충분한 GST 잔고가 있는지 확인합니다.
 
-  1. `nonces(owner)` 조회
-  2. EOA가 permit EIP-712 서명 (**오프체인 → 가스비 0**)
-  3. UO #1: SCA가 permit 실행
-  4. UO #2: SCA가 transferFrom 실행
+2. **recipient(수신자)** 주소와 **amount(수량)** 를 입력합니다.
 
-- 결과:
+3. **「4) [EOA 잔고] 가스리스 GST 전송 (permit 사용)」** 버튼을 클릭합니다.
 
-  - recipient는 GST 수령
-  - EOA GST 감소
-  - **EOA ETH 잔고 변화 없음**
-  - 2개의 UO → 모두 Dashboard “Sponsored”
+4. 내부적으로 앱은 다음을 수행합니다.
+
+   1. 토큰의 `nonces(owner)` 를 조회합니다.
+   2. MetaMask에 오프체인 EIP-712 **Permit 서명**을 요청합니다 (가스비 0).
+   3. **UserOperation #1:** Smart Account가 `token.permit(...)` 을 호출합니다.
+   4. **UserOperation #2:** Smart Account가 `token.transferFrom(EOA, recipient, amount)` 을 호출합니다.
+   5. 두 UserOperation 모두 Gas Manager가 스폰합니다.
+
+5. 결과:
+
+   - recipient는 GST를 수령합니다.
+   - EOA의 GST 잔고는 감소합니다.
+   - **EOA의 ETH 잔고는 변화 없습니다.**
+   - 최종 트랜잭션은 Etherscan에서 확인할 수 있습니다.
+   - Alchemy Dashboard에는 `no-op / permit / transferFrom` UO가 모두 **Sponsored** 로 표시됩니다.
 
 ---
 

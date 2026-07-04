@@ -38,7 +38,7 @@ flowchart TD
     D --> E["성공 확률 모델"]
     E --> F["개선 제안 생성기"]
     F --> G["거버넌스 대시보드"]
-````
+```
 
 | 모듈                                      | 설명                        | 주요 기술 구성                                 |
 | --------------------------------------- | ------------------------- | ---------------------------------------- |
@@ -81,7 +81,7 @@ AI-GovRisk는 **공개 DAO 데이터셋**(Arbitrum, Aave, Uniswap 등)과 **Moss
 
 ### 3.2 리스크 분류
 
-파인튜닝된 Transformer 모델(예: Mistral 7B, E5 Embedding 기반)이 제안서를 분석하여 리스크를 감지한다.
+파인튜닝된 Transformer 모델(예: LoRA 파인튜닝된 Llama3-8B 기반 모델과 E5 Embedding 기반, 4장 참고)이 제안서를 분석하여 리스크를 감지한다.
 
 * **중복 리스크:** 기존 제안과 유사도 0.85 이상
 * **실행 불가능 리스크:** 요청 예산 대비 산출물 불균형
@@ -141,7 +141,7 @@ print(analysis["risk_score"], analysis["suggestion"])
 ### 5.2 온체인 연동
 
 AI-GovRisk의 분석 결과는 오라클 또는 오프체인 브리지를 통해
-스마트 계약에서 직접 조회 가능하다 (예: Chainlink Functions).
+스마트 계약에서 직접 조회 가능하다 (예: Chainlink Functions, Gelato Automate).
 
 ---
 

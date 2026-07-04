@@ -1,5 +1,5 @@
 # System Design for DAO-Focused Multi-Document Summarization  
-_Leveraging Transformer Models, ChatGPT API, and a Hybrid Architecture_
+_Leveraging Transformer Models, the OpenAI API, and a Hybrid Architecture_
 
 - Author: Mossland Lab
 - Email: lab@moss.land
@@ -34,7 +34,7 @@ flowchart LR
 
     subgraph Summarization Engine
         B[Data Ingestion & Preprocessing] --> C[Chunking & Metadata Tagging]
-        C --> D[ChatGPT API - Transformer-based]
+        C --> D[OpenAI API - Transformer-based]
         D --> E[Partial Summaries]
         E --> F[Aggregator & Post-Processing]
     end
@@ -56,7 +56,7 @@ flowchart LR
 2. **Summarization Engine**:  
    - **Data Ingestion & Preprocessing**: Collects raw text, cleans it, and normalizes formatting.  
    - **Chunking & Metadata Tagging**: Splits large documents into manageable parts, attaches metadata (timestamp, author, etc.).  
-   - **ChatGPT API (Transformer-based)**: Generates partial summaries for each chunk.  
+   - **OpenAI API (Transformer-based)**: Generates partial summaries for each chunk.  
    - **Aggregator & Post-Processing**: Merges partial summaries, resolves redundancies, and ensures coherence.
 
 3. **Outputs**:  
@@ -72,15 +72,15 @@ sequenceDiagram
     participant Blockchain
     participant DB
     participant SummarizerEngine
-    participant ChatGPTAPI
+    participant OpenAIAPI
     participant Reviewer
 
     User->>SummarizerEngine: Request Summaries (via REST API)
     SummarizerEngine->>Blockchain: Fetch On-Chain Data (if applicable)
     SummarizerEngine->>DB: Fetch Off-Chain Data (forums, proposals, etc.)
     SummarizerEngine->>SummarizerEngine: Preprocess & Chunk Documents
-    SummarizerEngine->>ChatGPTAPI: Send Chunks for Partial Summaries
-    ChatGPTAPI-->>SummarizerEngine: Return Partial Summaries
+    SummarizerEngine->>OpenAIAPI: Send Chunks for Partial Summaries
+    OpenAIAPI-->>SummarizerEngine: Return Partial Summaries
     SummarizerEngine->>SummarizerEngine: Aggregate & Finalize
     alt Human-in-the-Loop is Enabled
         SummarizerEngine->>Reviewer: Request Manual Review
@@ -105,11 +105,11 @@ sequenceDiagram
 
 ### 3.2 Chunking & Metadata Tagging
 - **Chunking Strategy**:  
-  - Split large documents into smaller segments to fit the context window limit of ChatGPT API (e.g., 4,000-8,000 tokens).  
+  - Split large documents into smaller segments to fit the model's context window limit. As of mid-2026, current OpenAI models offer very large context windows (e.g., 128,000 tokens or more, up to ~1,000,000 tokens for models such as GPT-5.5), so chunking is typically only needed for exceptionally large corpora rather than individual documents.  
 - **Metadata Integration**:  
   - Each chunk retains a reference to its origin (on-chain or off-chain) and relevant identifiers.
 
-### 3.3 Summarization with ChatGPT API
+### 3.3 Summarization with the OpenAI API
 - **Prompt Construction**:  
   - System-level prompt: “You are an expert summarizer for DAO governance documents…”  
   - User-level prompt: Includes the chunk text, context, and formatting instructions.
@@ -135,7 +135,7 @@ Below is a simplified Python-like pseudocode showcasing how the system might pro
 def dao_summarization_pipeline(document_list, chatgpt_model, enable_human_review=False):
     """
     document_list: List[Dict] - [{ "type": "proposal", "content": "...", "metadata": {...}}, ...]
-    chatgpt_model: str - e.g., "gpt-4"
+    chatgpt_model: str - a current OpenAI model (e.g., "gpt-5.5" as of mid-2026; "gpt-4" is legacy)
     enable_human_review: bool - whether to enable optional human-in-the-loop review
     """
 
@@ -160,7 +160,7 @@ def dao_summarization_pipeline(document_list, chatgpt_model, enable_human_review
                 "metadata": doc["metadata"]
             })
 
-    # 3. Partial Summaries with ChatGPT API
+    # 3. Partial Summaries with the OpenAI API
     partial_summaries = []
     for chunk_doc in chunked_docs:
         prompt_text = create_prompt_from_chunk(chunk_doc["text"], chunk_doc["metadata"])
@@ -181,11 +181,11 @@ def dao_summarization_pipeline(document_list, chatgpt_model, enable_human_review
 1. **`preprocess_text(text: str) -> str`**  
    - Removes HTML tags, special characters, normalizes spacing.
 2. **`split_into_chunks(text: str, max_tokens: int) -> List[str]`**  
-   - Splits text into segments that fit the ChatGPT context window.
+   - Splits text into segments that fit the model's context window.
 3. **`create_prompt_from_chunk(chunk: str, metadata: Dict) -> str`**  
-   - Crafts an instructive prompt for ChatGPT, referencing relevant metadata.
+   - Crafts an instructive prompt for the model, referencing relevant metadata.
 4. **`call_chatgpt_api(model: str, prompt: str) -> str`**  
-   - Sends a completion request to the ChatGPT API; returns the summarized chunk.
+   - Sends a completion request to the OpenAI API; returns the summarized chunk.
 5. **`aggregate_partial_summaries(summaries: List[str]) -> str`**  
    - Concatenates and refines multiple partial summaries into a cohesive final summary.
 6. **`human_review_and_edit(text: str) -> str`**  
@@ -212,7 +212,7 @@ def dao_summarization_pipeline(document_list, chatgpt_model, enable_human_review
 
 ## 6. Conclusion
 This system design outlines a **DAO-focused multi-document summarization pipeline** incorporating:
-- **Automated Summaries** using ChatGPT API.  
+- **Automated Summaries** using the OpenAI API.  
 - **Metadata-Aware Chunking** for large documents.  
 - **Optional Human Review** to ensure domain correctness and transparency.  
 - **Scalable, Cloud-Based Deployment** with distributed components for robust DAO operations.

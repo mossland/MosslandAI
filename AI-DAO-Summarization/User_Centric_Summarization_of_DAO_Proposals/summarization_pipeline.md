@@ -18,5 +18,9 @@
      pip install transformers spacy
      python -m spacy download en_core_web_sm
      ```
+   - The companion OpenAI-based script (`summarization_pipeline_openai.py`) additionally requires the `openai` package (v1.x or later, which uses the `OpenAI()` client interface):
+     ```bash
+     pip install openai
+     ```
 
 You can expand this script to read proposal data from files or APIs and save the summaries to a database or file system. Let me know if you need further enhancements!

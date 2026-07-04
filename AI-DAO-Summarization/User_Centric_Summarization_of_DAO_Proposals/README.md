@@ -15,11 +15,11 @@ This document outlines the necessary technologies, APIs, methodologies, advantag
   - **Extractive Summarization**: Identifying key sentences or phrases directly from the proposal.
   - **Abstractive Summarization**: Generating human-like summaries that paraphrase the original text.
 - **Recommended Libraries/Frameworks**:
-  - [Hugging Face Transformers](https://huggingface.co/transformers): Provides pre-trained models like BERT, T5, and GPT-4 for summarization.
+  - [Hugging Face Transformers](https://huggingface.co/transformers): Provides pre-trained models like BERT, T5, and BART for summarization. (Note: OpenAI's GPT models are proprietary and are not available as loadable weights in Transformers; they are accessed via the OpenAI API — see below.)
   - [spaCy](https://spacy.io/): Useful for preprocessing and entity recognition.
   - [NLTK](https://www.nltk.org/) or [Gensim](https://radimrehurek.com/gensim/): Lightweight solutions for extractive summarization.
 - **Example API**:
-  - [OpenAI GPT-4 API](https://openai.com/api) (e.g., `gpt-4-turbo`) for advanced abstractive summarization.
+  - [OpenAI API](https://openai.com/api) with a current OpenAI chat model — as of mid-2026, the latest available models such as `gpt-5.5` (GPT-5.5, released April 2026) — for advanced abstractive summarization. (`gpt-4-turbo` and other GPT-4-class models are now legacy.)
   - [Google Cloud Natural Language API](https://cloud.google.com/natural-language) for keyword extraction and sentiment analysis.
 
 ### 2. Personalization Engine
@@ -52,7 +52,7 @@ This document outlines the necessary technologies, APIs, methodologies, advantag
    - Tokenization, stopword removal, and entity recognition using `spaCy` or `NLTK`.
 
 3. **Summarization**:
-   - Use a pre-trained NLP model (e.g., T5, GPT-4) to generate summaries.
+   - Use a pre-trained NLP model (e.g., T5, or a current OpenAI chat model such as GPT-5.5) to generate summaries.
    - **Example Pipeline**:
      ```python
      from transformers import pipeline
@@ -86,11 +86,11 @@ python summarization_pipeline.py
 ```
 
 ### 2. `summarization_pipeline_openai.py`
-This script integrates OpenAI's GPT-4-turbo API for summarization tasks. It provides a more dynamic and context-aware summary generation, leveraging OpenAI's advanced language models.
+This script integrates the OpenAI API for summarization tasks, using a current OpenAI chat model (as of mid-2026, the latest available models such as GPT-5.5; the legacy `gpt-4-turbo` it originally referenced is now superseded). It provides a more dynamic and context-aware summary generation, leveraging OpenAI's advanced language models.
 
 **Key Features**:
 - Utilizes spaCy for text preprocessing.
-- Sends cleaned text to OpenAI's ChatGPT API for high-quality summarization.
+- Sends cleaned text to the OpenAI API for high-quality summarization.
 
 **Example Use**:
 ```bash
@@ -117,7 +117,7 @@ python summarization_pipeline_openai.py
 
 | **Tool/API**           | **Strengths**                                         | **Weaknesses**                                    |
 |-------------------------|------------------------------------------------------|--------------------------------------------------|
-| OpenAI GPT-4 API        | State-of-the-art language understanding and generation. | High cost and dependency on external services.   |
+| OpenAI API (GPT-5.x)    | State-of-the-art language understanding and generation. | High cost and dependency on external services.   |
 | Hugging Face Transformers | Open-source, customizable models.                   | Requires significant infrastructure for hosting. |
 | Google Cloud NLP        | Easy to integrate, reliable for entity recognition.   | Limited advanced summarization capabilities.     |
 | Elasticsearch           | Powerful ranking and search functionality.           | Requires additional NLP for summarization.       |

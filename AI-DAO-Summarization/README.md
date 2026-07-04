@@ -12,6 +12,7 @@ This repository contains research and development efforts focused on leveraging 
 - **Files**:
   - [📄 AI_Based_User_Profiling_DAO_Summary_System.md](./AI_Based_User_Profiling_DAO_Summary_System.md) (Korean)
   - [📄 AI_Based_User_Profiling_DAO_Summary_System_EN.md](./AI_Based_User_Profiling_DAO_Summary_System_EN.md) (English)
+  - [📂 DAO Tendency Prototype (code)](./AI_Based_User_Profiling_DAO_Summary_System/) (working prototype: `dao_tendency_prototype.py`, `requirements.txt`, and its README)
 
 ### 2. Recent DAO AI Case Study
 

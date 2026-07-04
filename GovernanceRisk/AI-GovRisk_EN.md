@@ -28,14 +28,14 @@ The goal is to assist developers and DAO operators in building **intelligent, se
 ## 2. System Overview
 
 ```mermaid
-graph TD
+flowchart TD
     A[DAO Proposal Input] --> B[Proposal Parser]
     B --> C[Governance Memory DB]
     C --> D[Risk Prediction Engine]
     D --> E[Success Likelihood Model]
     E --> F[Improvement Suggestor]
     F --> G[Governance Dashboard]
-````
+```
 
 | Module                       | Description                                                    | Core Technology                          |
 | ---------------------------- | -------------------------------------------------------------- | ---------------------------------------- |
@@ -71,7 +71,7 @@ Each proposal record includes title, author, text content, category, voting resu
 
 ### 3.2 Risk Classification
 
-A fine-tuned transformer identifies risk categories such as:
+A fine-tuned transformer (e.g., the LoRA fine-tuned Llama3-8B base model with E5-based embeddings; see Section 4) identifies risk categories such as:
 
 * **Duplication Risk:** Similarity ≥ 0.85 with prior proposals
 * **Feasibility Risk:** Imbalanced budget-to-output ratio

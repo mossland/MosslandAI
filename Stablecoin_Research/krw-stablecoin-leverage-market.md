@@ -26,7 +26,7 @@ KRW stablecoins also streamline operational efficiency. Traditional fiat deposit
 
 ### 3. Enhancing Competitive Advantage and Market Share
 
-The introduction of KRW stablecoins can significantly bolster the competitiveness of domestic exchanges. Currently, Korean traders frequently use USD-pegged stablecoins, facilitating capital outflows toward international platforms. The availability of KRW stablecoins could reverse this trend, attracting both domestic and potentially international traders seeking a stable, localized trading environment.
+The introduction of KRW stablecoins can significantly bolster the competitiveness of domestic exchanges. As of mid-2025, Korean traders predominantly used USD-pegged stablecoins (USD-pegged stablecoin trading volume reached roughly 57 trillion won in Q1 2025 per the Bank of Korea), facilitating capital outflows toward international platforms. As of mid-2026, this landscape has begun to shift: won-backed stablecoins have started launching (e.g., BDACS's KRW1 in September 2025 and KRWQ in October 2025), and an enabling regulatory framework — the FSC-advanced Digital Asset Basic Act — is being finalized. Broader availability of KRW stablecoins could reverse the outflow trend, attracting both domestic and potentially international traders seeking a stable, localized trading environment.
 
 KRW stablecoins provide a unique opportunity to develop comprehensive leveraged trading products tailored specifically for the Korean market. Local exchanges could introduce KRW-denominated derivatives, options, and futures contracts, enhancing their market presence and transaction volumes by offering products directly aligned with the currency preferences of local investors.
 
@@ -38,7 +38,7 @@ Moreover, the constant liquidity provided by stablecoins simplifies and accelera
 
 ### 5. New Business Models and Revenue Opportunities
 
-Stablecoins open pathways to innovative financial products and services. Leveraged exchanges could leverage KRW stablecoins to develop yield-generating deposit products, stablecoin lending platforms, and integrated decentralized finance (DeFi) offerings. These additional financial products would enhance exchange profitability and attract diversified user bases.
+Stablecoins open pathways to innovative financial products and services. As of mid-2026, won-backed stablecoins have moved from proposal to early deployment — KRW1 (BDACS, September 2025) and KRWQ (October 2025) have launched, though so far in offshore/pilot form and not yet available to Korean residents pending passage of the Digital Asset Basic Act. The leveraged-trading products described here therefore remain prospective: once domestic, resident-facing issuance is permitted, leveraged exchanges could leverage KRW stablecoins to develop yield-generating deposit products, stablecoin lending platforms, and integrated decentralized finance (DeFi) offerings. These additional financial products would enhance exchange profitability and attract diversified user bases.
 
 Exchanges can potentially offer stablecoin-backed financial services, including stablecoin savings accounts, collateralized loans, and interest-bearing products. Such offerings enable exchanges to capture additional income streams through lending spreads and interest income, significantly diversifying their business models beyond traditional transaction fees.
 
@@ -64,3 +64,6 @@ In conclusion, integrating KRW stablecoins within leveraged exchanges promises c
 * [Deloitte Insights - Stablecoins](https://www2.deloitte.com/us/en/insights/industry/financial-services/stablecoins.html)
 * [World Economic Forum on Digital Currency](https://www.weforum.org/agenda/2020/01/stablecoins-digital-currency-finance/)
 * [IMF - The Role of Stablecoins](https://www.imf.org/en/Publications/WP/Issues/2022/01/10/The-Rise-of-Stablecoins-511531)
+* [CryptoBriefing - BDACS KRW1 Stablecoin Launch on Avalanche (Sept 2025)](https://cryptobriefing.com/bdacs-krw1-stablecoin-avalanche-launch/)
+* [The Block - KRWQ Korean Won Stablecoin on Base (2025)](https://www.theblock.co/post/376877/krwq-korean-won-stablecoin-base)
+* [CoinDesk - South Korea Proposes Cryptocurrency Law with Bank-Style Rules for Stablecoins (Apr 2026)](https://www.coindesk.com/policy/2026/04/08/south-korea-proposes-cryptocurrency-law-with-bank-style-rules-for-stablecoins)

@@ -194,7 +194,7 @@ These user scenarios shape the **functional specification** in the next section.
 4. **Main Flow**:  
    - The system retrieves proposal text from the database or IPFS.  
    - An AI prompt is constructed specifying summarization length, style, and key items (budget, timeframe, etc.).  
-   - The AI model (e.g., GPT-4) returns a summary.  
+   - The AI model (e.g., a current LLM) returns a summary.  
    - The UI displays the summary in a **clearly delineated** area, with optional feedback buttons (helpful/not helpful).
 
 5. **Output**: A concise textual summary in plain language or bullet points.  
@@ -464,7 +464,7 @@ flowchart LR
     end
     
     subgraph "AI Backend"
-        APIPrompt[Prompt Constructor] --> LLM(ChatGPT Model GPT-4 or 3.5)
+        APIPrompt[Prompt Constructor] --> LLM(Large Language Model)
         LLM --> PostProc[Post-processor]
     end
     
@@ -485,7 +485,7 @@ flowchart LR
 **Diagram Explanation**:
 1. The **Frontend** (Dashboard, Proposal UI, Chat Interface) sends a **query** to the AI Backend whenever the user requests a summary, Q&A, or recommendation.  
 2. The **Prompt Constructor** retrieves data from the DAO’s databases and the blockchain (plus user preferences for personalization).  
-3. The **Language Model** (GPT-4 / GPT-3.5) generates a response.  
+3. The **Language Model** (a current LLM, e.g., a GPT-5-class model as of mid-2026; the specific model is illustrative and interchangeable) generates a response.  
 4. A **Post-Processor** can reformat or validate certain outputs before returning them to the UI.  
 
 ---
@@ -499,10 +499,11 @@ function summarizeProposal(proposalId):
     prompt = "Summarize the proposal below. Focus on objectives, budget, " +
              "and key risks in under 200 words:\n\n" + text
 
-    if length(text) < 4000:
-        model = GPT_4
-    else:
-        model = GPT_3_5_TURBO_16K  # or chunk if needed
+    # As of mid-2026, a single current large-context LLM (e.g., a GPT-5-class
+    # model with a ~1M-token context window) handles a full proposal in one call,
+    # so length-based routing between two models is no longer needed. Only chunk
+    # for inputs approaching the model's context-window limit.
+    model = CURRENT_LARGE_CONTEXT_LLM  # e.g., a GPT-5-class model (illustrative)
 
     summary = callLLM(model, prompt)
     return summary
@@ -565,8 +566,8 @@ function recommendProposalsForUser(userId):
    - Ensure **transparency**: label AI content, keep original references accessible.
 
 4. **Technical Feasibility**  
-   - Modern LLMs (GPT-4 / GPT-3.5) can handle complex summarization and contextual queries.  
-   - Must address context-window limits, caching repeated queries, and explicit user feedback loops.  
+   - Current large-context LLMs (as of mid-2026, GPT-5-class models such as GPT-5.5 with context windows on the order of 1M tokens; GPT-4 / GPT-3.5 are now legacy and scheduled for API retirement) can handle complex summarization and contextual queries.  
+   - Must still address context-window limits for extreme inputs, caching repeated queries, and explicit user feedback loops.  
    - Integration with on-chain data is crucial for **real-time** analytics.
 
 ### **Future Research**:

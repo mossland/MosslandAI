@@ -19,7 +19,7 @@
 
 ### 1.3 노딧(Nodit)과 AI 융합을 향한 진화
 
-람다256은 2024년부터 “노딧(Nodit)”이라는 퍼블릭 체인 노드 및 블록체인 데이터 API 서비스를 본격화하며 사업 지평을 넓히고 있습니다. 노딧은 기존 노바를 대체할 예정이며, 이더리움, 폴리곤, 아비트럼 등 여러 퍼블릭 체인의 노드 인프라를 제공하고, 개발자들에게 실시간 온체인 데이터 API, 이벤트 스트리밍 등 고성능 웹3 개발 도구를 제공하는 플랫폼입니다. 특히 2025년 4월에는 노딧에 MCP(Model Context Protocol)라는 혁신적 기능을 도입하여 AI와 블록체인의 융합 가능성을 제시했습니다 [3]. 노딧 MCP는 온체인 데이터를 챗GPT나 클로드(Claude) 같은 대형 언어 모델(LLM)이 직접 이해할 수 있는 구조로 변환해 주는 기술로, 복잡한 블록체인 데이터를 사람이 질의하듯 자연어로 질의·응답하거나 요약할 수 있게 해줍니다. 예를 들어 개발자는 별도 코딩 없이도 지갑 주소의 거래 내역, NFT 보유 정보를 텍스트 질의만으로 얻을 수 있으며, MCP가 지갑 활동, 트랜잭션 패턴 등을 요약해주기 때문에 AI 기반의 블록체인 데이터 분석 및 서비스 개발이 한층 수월해집니다. 현재 MCP는 노딧의 모든 Web3 데이터 API와 연계되어 작동하며, 이더리움, 앱토스, 베이스, 아비트럼, 아발란체, 비트코인, 도지코인, 트론, XRP 원장 등 10개 이상 주요 블록체인을 지원하고 있습니다. 결국 루니버스는 BaaS를 넘어 ‘멀티체인 + AI 데이터 레이어’라는 차세대 Web3 인프라 지향점을 선명히 드러낸 셈입니다.
+람다256은 2024년부터 “노딧(Nodit)”이라는 퍼블릭 체인 노드 및 블록체인 데이터 API 서비스를 본격화하며 사업 지평을 넓히고 있습니다. 노딧은 기존 노바를 대체할 예정이며, 이더리움, 폴리곤, 아비트럼 등 여러 퍼블릭 체인의 노드 인프라를 제공하고, 개발자들에게 실시간 온체인 데이터 API, 이벤트 스트리밍 등 고성능 웹3 개발 도구를 제공하는 플랫폼입니다. 특히 2025년 4월에는 노딧에 MCP(Model Context Protocol)라는 혁신적 기능을 도입하여 AI와 블록체인의 융합 가능성을 제시했습니다 [3]. 노딧 MCP는 온체인 데이터를 챗GPT나 클로드(Claude) 같은 대형 언어 모델(LLM)이 직접 이해할 수 있는 구조로 변환해 주는 기술로, 복잡한 블록체인 데이터를 사람이 질의하듯 자연어로 질의·응답하거나 요약할 수 있게 해줍니다. 예를 들어 개발자는 별도 코딩 없이도 지갑 주소의 거래 내역, NFT 보유 정보를 텍스트 질의만으로 얻을 수 있으며, MCP가 지갑 활동, 트랜잭션 패턴 등을 요약해주기 때문에 AI 기반의 블록체인 데이터 분석 및 서비스 개발이 한층 수월해집니다. 현재 MCP는 노딧의 모든 Web3 데이터 API와 연계되어 작동하며, 이더리움, 앱토스, 베이스, 아비트럼, 아발란체, 비트코인, 도지코인, 트론, XRP 원장 등 10개 이상 주요 블록체인을 지원하고 있습니다. 결국 루니버스는 BaaS를 넘어 ‘멀티체인 + AI 데이터 레이어’라는 차세대 Web3 인프라 지향점을 선명히 드러낸 셈입니다. 2026년 중반 기준, 노딧은 이러한 방향을 한층 구체화하고 있습니다. 노드 서비스·데이터 API·이벤트 스트리밍의 지원 범위가 50개 이상의 블록체인 네트워크로 확대되었으며 [10], 2026년 2월에는 한국 블록체인 기업 최초로 SOC 2 Type II 인증(EY 한국과 함께 심사, 2025년 11월 SOC 2 Type I 인증에 이은 후속)을 획득해 엔터프라이즈급 인프라 신뢰성을 입증했습니다 [11].
 
 ## 2. 기술적 특징과 구조적 과제
 
@@ -116,3 +116,7 @@
 [8] PANews  - 람다256, VerifyVASP 트래블룰 솔루션 출시 (2021‑08‑16) https://www.panewslab.com/ko/articles/article-68579
 
 [9] GlobeNewswire  - MiL.k MLK Arbitrum Migration (2025‑05‑22) https://www.globenewswire.com/news-release/2025/05/22/3086333/0/en/MiL-k-MLK-Achieves-its-Arbitrum-Migration-with-Over-80-000-Wallets-in-Five-Weeks.html
+
+[10] Nodit – The Leading Web3 Data and Development Platform (지원 네트워크 50개 이상) https://www.nodit.io/
+
+[11] PR Newswire – Lambda256's Nodit Achieves SOC 2 Type II Certification (2026‑02‑02) https://www.prnewswire.com/apac/news-releases/lambda256s-nodit-achieves-soc-2-type-ii-certification-validating-enterprise-grade-blockchain-infrastructure-operations-302675079.html

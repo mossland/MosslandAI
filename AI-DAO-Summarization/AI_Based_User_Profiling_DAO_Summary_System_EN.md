@@ -30,7 +30,7 @@ This research aims to **apply AI to summarize DAO proposals, community forums, a
 ## 2. Background and Motivation
 1. **Information Overload**: DAOs are open organizations, creating a constant stream of new proposals and forum/social channel discussions. It is difficult for participants to read and understand all of this information in a timely manner [2].  
 2. **Diverse User Tendencies**: Members differ in their focus on investment vs. community values, short-term vs. long-term results, etc. Presenting the same information to everyone often means critical details are missed or members lose motivation to participate [3].  
-3. **Advances in AI**: Large language models (LLMs), such as GPT, have made significant progress in text summarization and natural language processing. If leveraged effectively, this could greatly benefit DAO governance [4].
+3. **Advances in AI**: Large language models (LLMs) have made significant progress in text summarization and natural language processing. As of mid-2026, this is led by the latest available models such as OpenAI's GPT-5.x family (GPT-5.5 as the current shipping flagship, with the GPT-5.6 Sol/Terra/Luna series in preview), while GPT-3.5 and GPT-4 are now legacy. If these current-generation models are leveraged effectively, this could greatly benefit DAO governance [4].
 
 ---
 
@@ -44,11 +44,11 @@ This research aims to **apply AI to summarize DAO proposals, community forums, a
 
 ## 4. Related Work
 ### 4.1 DAO Governance Tools
-- Platforms such as **Aragon**, **Tally**, and **Snapshot** provide governance services, some of which display proposals or voting records [3].  
+- Platforms such as **Aragon**, **Tally**, and **Snapshot** provide governance services, some of which offer functions to organize governance proposals or analyze voting records [3].  
 - However, **personalization** and **advanced summarization** remain in their early stages.
 
 ### 4.2 AI-based Text Summarization
-- OpenAI GPT models (GPT-3.5, GPT-4, etc.) enable **abstractive summarization**, condensing the original content into shorter text [4].  
+- The latest OpenAI GPT models (as of 2026, the GPT-5.x family, e.g. GPT-5.5) enable **abstractive summarization**, condensing the original content into shorter text; GPT-3.5 and GPT-4 are now legacy models [4].  
 - **Prompt engineering** allows for customizing summaries according to a user’s preferences [4].
 
 ### 4.3 User Tendency Analysis
@@ -107,7 +107,7 @@ Additional factors like **risk tolerance** or **centralization preference** may 
 ## 7. AI-Powered Summarization and Communication
 
 ### 7.1 Summarization Techniques
-- **Abstractive Summarization**: Models like GPT-4 can paraphrase and condense key points from original text.  
+- **Abstractive Summarization**: Current-generation models (as of 2026, the GPT-5.x family) can paraphrase and condense key points from original text.  
 - **Key Point Extraction**: Structuring major arguments for and against a proposal in bullet-point format.  
 - **Personalized Summaries**: Emphasizing stability and risk mitigation for conservative users, highlighting innovation for progressive users, etc.
 
@@ -142,7 +142,7 @@ flowchart LR
 ```mermaid
 flowchart TB
     A["Raw Proposal / Discussion Text"] --> B["Preprocessing\n(Tokenization, Cleaning)"]
-    B --> C["LLM-based Summarization\n(GPT-4, etc.)"]
+    B --> C["LLM-based Summarization\n(current-gen LLM, e.g. GPT-5-class)"]
     C --> D["Post-processing\n(Key Points, Pros/Cons)"]
     E["User Profile\n(Tendency)"] --> C
     D --> F["Personalized Summary Output"]
@@ -160,7 +160,7 @@ Our research is conducted in **three major phases**.
 
 ### 9.2 Phase 2: Personalized Summaries & Voting
 1. **Data Collection**: Aggregate proposal and forum data in real time or at regular intervals.  
-2. **AI Summarization**: Leverage GPT APIs for compressing and reorganizing content.  
+2. **AI Summarization**: Leverage the latest LLM APIs (as of 2026, the GPT-5.x family) for compressing and reorganizing content.  
 3. **Incorporate User Preferences**: Personalize summaries using data from the user profile DB.  
 4. **Delivery**: Provide summaries via email, push notifications, etc.  
 5. **Voting**: Users cast informed votes more conveniently.
@@ -198,6 +198,8 @@ sequenceDiagram
 ## 10. Industry Applications and Latest Trends
 
 ### 10.1 Real-World DAO AI Adoption
+The examples below reflect early 2023–2024 developments. As of mid-2026, AI-assisted DAO governance tooling has matured well beyond these early experiments, with proposal summarization, vote recommendation, and AI-agent-based automated participation increasingly productized across multiple platforms.
+
 - **Tally**: Some DAOs have submitted proposals like “AI-Powered Governance Enhancement,” aiming to analyze past votes for automated recommendations or insights [2].  
 - **Aragon**: Proposed AI summarization features in governance forums; ChatGPT-based summarizations of governance discussions have also appeared [3].
 
@@ -212,7 +214,7 @@ sequenceDiagram
 This research tackles **the challenge of information overload and low participation** in DAO governance by combining **AI-based user tendency analysis** with **personalized voting summaries**. Specifically:
 
 1. **User Tendency Analysis**: We model user preferences on axes such as conservative vs. progressive, economically vs. socially driven, and short-term vs. long-term [1][2][3].  
-2. **AI Summarization**: We employ GPT-based models to abstractly summarize proposals and forum discussions, tailoring the content to each user’s profile [4].  
+2. **AI Summarization**: We employ current-generation GPT models (as of 2026, the GPT-5.x family) to abstractly summarize proposals and forum discussions, tailoring the content to each user’s profile [4].  
 3. **Continuous Profile Updating**: We incorporate voting outcomes and emerging community trends to maintain accurate user profiles and deliver relevant recommendations.
 
 This approach enables DAO members to quickly grasp the crux of proposals and make decisions aligned with their values, thus boosting participation. Future expansions could see **AI agents autonomously voting** or posting in forums on behalf of users. Moreover, the proposed processes and modules could be integrated with existing DAO tooling platforms to form a user-centric, personalized governance service.

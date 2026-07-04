@@ -1,11 +1,15 @@
-import openai
+from openai import OpenAI
 import spacy
 
 # Load spaCy model for preprocessing
 nlp = spacy.load("en_core_web_sm")
 
-# OpenAI API key configuration
-openai.api_key = "YOUR_OPENAI_API_KEY"
+# OpenAI client configuration (openai Python SDK v1.x, which uses the OpenAI() client).
+client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
+
+# Current OpenAI chat model as of 2026 (e.g. GPT-5.5). Update to whichever model
+# your account has access to; the legacy "gpt-4-turbo" is now superseded.
+OPENAI_MODEL = "gpt-5.5"
 
 def preprocess_text(text):
     """Cleans and preprocesses input text using spaCy."""
@@ -14,16 +18,16 @@ def preprocess_text(text):
     return " ".join(sentences)
 
 def summarize_text_with_openai(text):
-    """Generates a summary of the input text using OpenAI's GPT-4-turbo API."""
+    """Generates a summary of the input text using a current OpenAI chat model."""
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4-turbo",
+        response = client.chat.completions.create(
+            model=OPENAI_MODEL,
             messages=[
                 {"role": "system", "content": "You are a helpful assistant that summarizes text."},
                 {"role": "user", "content": text}
             ]
         )
-        return response['choices'][0]['message']['content'].strip()
+        return response.choices[0].message.content.strip()
     except Exception as e:
         print(f"Error during summarization: {e}")
         return None
@@ -43,7 +47,7 @@ def main():
     print("Cleaned Text:")
     print(cleaned_text)
 
-    # Step 2: Generate summary with OpenAI GPT-4-turbo API
+    # Step 2: Generate summary with a current OpenAI chat model
     summary = summarize_text_with_openai(cleaned_text)
     if summary:
         print("\nGenerated Summary:")

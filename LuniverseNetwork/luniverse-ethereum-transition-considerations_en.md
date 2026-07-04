@@ -18,6 +18,8 @@ Within this structure, Luniverse provides developers with a one‑stop blockchai
 
 The Luniverse structure has played a key role in helping enterprises adopt blockchain technology safely and quickly, especially in industries where regulatory compliance is critical. However, further considerations remain in terms of **global scalability** and **ecosystem diversity**.
 
+Note that, as of mid‑2026, Lambda256 has expanded beyond the traditional Luniverse BaaS sidechain model toward **NODIT** (which succeeds the earlier **Luniverse NOVA**), a node and Web3‑data service targeting public chains such as **Ethereum**, **Polygon**, and **Arbitrum**. The consortium mainnet **“The Balance”** continues to operate, but the company’s recent growth focus has shifted toward supporting public‑chain infrastructure.
+
 ## 3. Structural Characteristics of Luniverse (Compared with Ethereum)
 
 ### 3.1 Size of the Developer Ecosystem and Community
@@ -38,11 +40,11 @@ Tokens or NFTs issued on Luniverse cannot be used immediately on global platform
 
 Lambda256 says it is “expanding the Luniverse ecosystem through linkage with Ethereum” and plans to enhance interoperability with other mainnets in the future \[3]. Accordingly, Luniverse projects that aim to attract global users must pursue **multi‑chain strategies** or **bridge utilization**, and the UX and operational burden increases in the process, making step‑by‑step bridge optimization important.
 
-By contrast, the **Ethereum mainnet** is a universal platform that millions of people worldwide can access with a single wallet. As of 2025, the network had more than **120 million active addresses** (30‑day transaction window), and hundreds of thousands of new wallets are created each week \[4]. When Ethereum’s L2 networks are included, users can employ L2 while still enjoying an integrated experience as part of the broader Ethereum ecosystem.
+By contrast, the **Ethereum mainnet** is a universal platform that millions of people worldwide can access with a single wallet. As of mid‑2026, the Ethereum mainnet had more than **380 million cumulative unique addresses** ever created, with roughly **9.6 million monthly active addresses** (30‑day transaction window) and about **590,000 daily active addresses** (tens of millions more when L2s are included); hundreds of thousands of new wallets are still created each week \[4]. When Ethereum’s L2 networks are included, users can employ L2 while still enjoying an integrated experience as part of the broader Ethereum ecosystem.
 
 ### 3.3 Governance and Network Trust
 
-Because Luniverse employs PoA, validator selection and network governance are **centralized**. Up to 25 authorized partner nodes create blocks on the Luniverse mainnet, and these are entities trusted by Lambda256. With so few participants, users must trust a small validator set (and, by extension, the operator). Should these entities decide to change policies, others may struggle to respond. For example, upgrades or rule changes provide relatively few channels for token holders or DApp developers to voice their opinions officially.
+Because Luniverse employs PoA, validator selection and network governance are **centralized**. Up to 25 authorized partner nodes create blocks on the Luniverse mainnet, and these are entities trusted by Lambda256. Participation is limited, and validators stake a certain amount and are subject to slashing (forfeiture of their stake) for rule violations, so a managed form of governance applies. With so few participants, users must trust a small validator set (and, by extension, the operator). Should these entities decide to change policies, others may struggle to respond. For example, upgrades or rule changes provide relatively few channels for token holders or DApp developers to voice their opinions officially.
 
 By contrast, after Ethereum switched to **PoS** in 2022, more than **one million** validator nodes globally now co‑operate the network. This level of decentralization prevents unilateral change and ensures neutrality. Governance proceeds through open **Ethereum Improvement Proposal (EIP)** discussions—which, though slow and complex, serve as the basis for community trust. Institutional investors often cite Ethereum’s decentralization and neutrality in preferring Ethereum DeFi \[5].
 
@@ -50,7 +52,7 @@ By contrast, after Ethereum switched to **PoS** in 2022, more than **one mill
 
 The liquidity of tokens and NFTs issued on Luniverse remains **limited** compared with Ethereum. Although Luniverse allows easy token issuance, assets often stay confined within its ecosystem. Lambda256 provides technical links with Korean exchanges such as **Upbit** and **Coinone**, but these are limited to certain domestic exchanges partnered with Lambda256. Few global exchanges or DeFi protocols list Luniverse‑specific tokens. Projects must issue mirrored **ERC‑20** versions or convert via bridges, increasing operational overhead, security considerations, and potential user confusion.
 
-In Ethereum’s ecosystem, these complexities are largely mitigated. **ERC‑20** tokens can list immediately on global DEXes like **Uniswap** and on hundreds of centralized exchanges. They can be used as collateral in numerous DeFi protocols. As of 2025, Ethereum accounts for about **55 %** of total DeFi **TVL**, outpacing competitors such as **Solana** thanks to its modular expansion approach \[5].
+In Ethereum’s ecosystem, these complexities are largely mitigated. **ERC‑20** tokens can list immediately on global DEXes like **Uniswap** and on hundreds of centralized exchanges. They can be used as collateral in numerous DeFi protocols. As of mid‑2026, Ethereum accounts for about **53 %** of total DeFi **TVL**—down from roughly **63 %** at the start of 2025 and near a multi‑year low, yet still the largest single chain in both share and absolute terms (about **USD 45 billion**) \[5].
 
 Such liquidity gaps directly affect token‑value formation and user‑adoption growth. **Gartner** projects that blockchain technology will generate more than **USD 3.1 trillion** in business value by 2030 \[6]. Without direct access to global liquidity networks, projects risk missing out on that immense value. Accordingly, Luniverse projects require strategic planning.
 
@@ -111,7 +113,7 @@ In short, migration to the Ethereum network deserves serious consideration from 
    [https://wiki1.kr/index.php/루니버스](https://wiki1.kr/index.php/루니버스)
 
 [2] **Cameron O’Rourke**, “Why Is Anyone Still Developing on Ethereum in 2023?” (Aug 2023)
-   [https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-이더리움-e91461d0a45a](https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-이더리움-e91461d0a45a)
+   [https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-ethereum-e91461d0a45a](https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-ethereum-e91461d0a45a)
 
 [3] **Decenter**, “NFT Issued on Luniverse? Move It to Ethereum” … Lambda256 Launches Multichain NFT Bridge (2022)
    [https://kr.investing.com/news/cryptocurrency-news/article-787272](https://kr.investing.com/news/cryptocurrency-news/article-787272)
@@ -119,8 +121,8 @@ In short, migration to the Ethereum network deserves serious consideration from 
 [4] **CoinLaw**, “Ethereum Statistics 2025”
    [https://coinlaw.io/bitcoin-vs-ethereum-statistics/](https://coinlaw.io/bitcoin-vs-ethereum-statistics/)
 
-[5] **Coin World**, “Ethereum Dominates DeFi with 55 % TVL as Modular Approach Outpaces Solana” (Jul 2025)
-   [https://www.coinworld.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/](https://www.coinworld.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/)
+[5] **AInvest**, “Ethereum Dominates DeFi with 55 % TVL as Modular Approach Outpaces Solana” (Jul 2025, ~55 % snapshot); for the mid‑2026 figure see **Bitcoin.com News**, “Ethereum’s DeFi TVL Dominance Drops to 53%, Approaching Multi‑Year Low” (May 2026)
+   [https://www.ainvest.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/](https://www.ainvest.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/) ; [https://news.bitcoin.com/ethereums-defi-tvl-dominance-drops-to-53-approaching-multi-year-low/](https://news.bitcoin.com/ethereums-defi-tvl-dominance-drops-to-53-approaching-multi-year-low/)
 
 [6] **Gartner**, *Forecast: Blockchain Business Value, Worldwide, 2024‑2030* (May 2024)
    [https://iotworldmagazine.com/2024/05/20/2301/a-review-of-top-blockchain-market-size-reports-2024-2030-on-growth-segments-analysis-and-forecasts-in-uk-europe-and-asia](https://iotworldmagazine.com/2024/05/20/2301/a-review-of-top-blockchain-market-size-reports-2024-2030-on-growth-segments-analysis-and-forecasts-in-uk-europe-and-asia)
@@ -138,4 +140,4 @@ In short, migration to the Ethereum network deserves serious consideration from 
     [https://www.dlnews.com/articles/defi/ethereums-dencun-upgrade-cuts-layer-2-fees-as-much-as-98/](https://www.dlnews.com/articles/defi/ethereums-dencun-upgrade-cuts-layer-2-fees-as-much-as-98/)
 
 [11] **KPMG Switzerland**, *Blockchain Report 2024 – DLT the Foundation of Digital Trust* (Jan 2025)
-    [https://assets.kpmg.com/content/dam/kpmgites/ch/pdf/kpmg-blockchain-report-2024.pdf.coredownload.pdf](https://assets.kpmg.com/content/dam/kpmgites/ch/pdf/kpmg-blockchain-report-2024.pdf.coredownload.pdf)
+    [https://assets.kpmg.com/content/dam/kpmgsites/ch/pdf/kpmg-blockchain-report-2024.pdf.coredownload.pdf](https://assets.kpmg.com/content/dam/kpmgsites/ch/pdf/kpmg-blockchain-report-2024.pdf.coredownload.pdf)

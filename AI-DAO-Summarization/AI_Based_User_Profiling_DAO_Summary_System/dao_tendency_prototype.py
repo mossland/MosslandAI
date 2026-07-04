@@ -1,12 +1,17 @@
 import os
 import json
-import openai
+from openai import OpenAI
 from collections import defaultdict
 
-# Set your OpenAI API key from the environment variable or assign it directly.
-openai.api_key = os.getenv("OPENAI_API_KEY")
-# Alternatively, uncomment and set your key directly:
-# openai.api_key = "your-api-key-here"
+# OpenAI client (openai Python SDK v1.x, which uses the OpenAI() client interface).
+# Reads the API key from the OPENAI_API_KEY environment variable by default.
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Alternatively, pass your key directly:
+# client = OpenAI(api_key="your-api-key-here")
+
+# Current OpenAI chat model as of 2026 (e.g. GPT-5.5). Update to whichever model
+# your account has access to; the legacy "gpt-4" is now superseded.
+OPENAI_MODEL = "gpt-5.5"
 
 class UserTendencyAnalyzer:
     def __init__(self, survey_responses=None, activity_data=None, opinions=None):
@@ -126,7 +131,7 @@ class UserTendencyAnalyzer:
 
     def analyze_opinions_openai(self):
         """
-        Use OpenAI's ChatCompletion API (with model "gpt-4") to analyze user opinions.
+        Use OpenAI's Chat Completions API (with a current chat model) to analyze user opinions.
         The API prompt instructs the model to output a JSON object with scores for:
             - progressive vs conservative,
             - economic vs social,
@@ -150,8 +155,8 @@ class UserTendencyAnalyzer:
             '{"progressive": 0.7, "conservative": 0.3, "economic": 0.4, "social": 0.6, "long_term": 0.8, "short_term": 0.2}'
         )
         try:
-            response = openai.ChatCompletion.create(
-                model="gpt-4",  # Use the valid model identifier "gpt-4"
+            response = client.chat.completions.create(
+                model=OPENAI_MODEL,
                 messages=[
                     {"role": "system", "content": "You are an expert assistant analyzing user opinions."},
                     {"role": "user", "content": prompt}
@@ -159,7 +164,7 @@ class UserTendencyAnalyzer:
                 temperature=0.0,
                 max_tokens=150
             )
-            content = response['choices'][0]['message']['content']
+            content = response.choices[0].message.content
             result = json.loads(content)
             return result
         except Exception as e:

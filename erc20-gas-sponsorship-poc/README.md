@@ -15,7 +15,7 @@ a **gas sponsorship (gasless transfer)** architecture for ERC-20 tokens.
 * `example/`
 
   * Gas sponsorship PoC example built with **React, Vite, viem, and Alchemy Account Kit**.
-  * For detailed setup and usage, see [`example/README.md`](./example/README.md).
+  * For detailed setup and usage, see [`example/README.md`](./example/README.md) (English) / [`example/README_ko.md`](./example/README_ko.md) (한국어).
 
 * `docs/`
 
@@ -50,7 +50,7 @@ Open the Vite dev server URL in your browser (default: `http://localhost:5173`).
 
 - `example/`  
   - React + Vite + viem + Alchemy Account Kit 기반 **가스비 스폰서십 PoC 예제**  
-  - 상세 실행 방법 / 설정은 [`example/README.md`](./example/README.md)를 참고하세요.
+  - 상세 실행 방법 / 설정은 [`example/README_ko.md`](./example/README_ko.md)(한국어) / [`example/README.md`](./example/README.md)(English)를 참고하세요.
 
 - `docs/`  
   - `01-erc20-gas-sponsorship-env.md`  
@@ -64,6 +64,6 @@ Open the Vite dev server URL in your browser (default: `http://localhost:5173`).
 cd example
 npm install
 npm run dev
-````
+```
 
 브라우저에서 Vite dev 서버 주소(기본값: `http://localhost:5173`)로 접속하면 됩니다.

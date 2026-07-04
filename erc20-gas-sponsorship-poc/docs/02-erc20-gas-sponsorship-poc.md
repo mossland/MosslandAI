@@ -40,8 +40,7 @@ PoC 환경은 다음과 같다.
 - EOA가 보유한 GST를 recipient로 전송하되,
 - 온체인 가스비는 **SCA + Gas Manager(Paymaster)** 가 부담하도록
 
-트랜잭션을 생성·전송한다. 
-a7ebd8b7-adde-4c9c-829c-81a6d2a…
+트랜잭션을 생성·전송한다.
 
 ---
 
@@ -152,6 +151,12 @@ const client = await createModularAccountAlchemyClient({
     **Bundler + Gas Manager** 를 사용하는 Account Kit 클라이언트 생성.
     
 - 이 클라이언트를 통해 `sendUserOperation`, `waitForUserOperationTransaction` 등을 호출한다.
+
+> 참고 (2026년 중반 기준): 본 PoC는 `@account-kit/smart-contracts ^4.78.0` 에 고정되어
+> `createModularAccountAlchemyClient` 를 사용한다. 최신 Alchemy Account Kit 에서는 이 함수가
+> deprecated 되었으며, 신규 통합에서는 `AlchemyTransport` 와 함께
+> `createModularAccountClient` / `createModularAccountV2Client` 를 사용하는 것이 권장된다.
+> 사용 중인 `@account-kit/smart-contracts` 버전의 릴리스 노트를 확인할 것.
 
 ### (5) 반환 값
 
@@ -507,7 +512,7 @@ UI 로그 예시:
 ⏳ transferFrom UserOperation 채굴 대기 중...
 
 🎉 [EOA → recipient] 가스리스 토큰 전송 완료
-· 최종 txHash: 0x748080b6...58f8se22
+· 최종 txHash: 0x748080b6...58f85e22
 
 ```
 
@@ -554,15 +559,15 @@ L1 트랜잭션 해시를 반환한다.
 
 예시 트랜잭션 해시:
 
-`0x748080b6804f004e96677bae78395e91d58395a6db1f6772e016113058f8se22`
+`0x748080b6804f004e96677bae78395e91d58395a6db1f6772e016113058f85e22`
 
 주요 항목:
 
 - **From**: `0x170F4967A427FE850B3E3f1c17B9a528E79f8807`
     - EIP-4337 Bundler 또는 EntryPoint를 호출하는 Aggregator 주소
     - 사용자의 EOA가 아니라 **인프라 측 주소**
-- **Interacted With (To)**: `0x5FF137D4b0FDCD49DcA30c7CF57E57B8a026d2789`
-    - EIP-4337 EntryPoint 컨트랙트 주소
+- **Interacted With (To)**: `0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789`
+    - EIP-4337 EntryPoint 컨트랙트 주소 (EntryPoint v0.6 표준 주소)
 - **Internal Transactions**
     - `0x5FF137D4...` → `0x170F4967...` 방향의 소량 ETH 이동
     - Paymaster(Gas Manager)와 Bundler/EntryPoint 사이의 정산 흐름으로,
@@ -846,9 +851,10 @@ graph LR
 
 현재 PoC에서 EOA → recipient 가스리스 전송은
 
-다음 **3개의 UserOperation** 으로 구성된다.
+**2개의 비즈니스 로직 UserOperation(permit + transferFrom)** 과,
+Smart Account 최초 배포를 위한 **1회성 no-op UserOperation(선택)** 으로 구성된다.
 
-1. (필요 시) no-op UO – Smart Account 최초 배포
+1. (최초 1회, 필요 시) no-op UO – Smart Account 최초 배포
 2. `permit` UO – `token.permit(owner, spender, ...)`
 3. `transferFrom` UO – `token.transferFrom(owner, recipient, ...)`
 

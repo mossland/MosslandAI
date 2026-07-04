@@ -1,5 +1,7 @@
 # Gasless ERC-20 Transfer · Sepolia · Alchemy Account Kit
 
+**English** | [한국어](./README_ko.md)
+
 This project is a PoC that demonstrates **gasless ERC-20 token transfers** using only a MetaMask EOA.  
 It combines Alchemy Account Kit (modular Smart Account), Gas Manager (Paymaster), and an ERC-20 `permit + transferFrom` pattern to provide a **gasless UX** for token transfers.
 
@@ -95,7 +97,7 @@ graph TD
 
 ## 4. Prerequisites
 
-1. **Node.js 18+**
+1. **Node.js 20.19+ or 22.12+** (required by Vite 7, which dropped Node.js 18 after its EOL at the end of April 2025)
 2. **MetaMask browser extension**
 3. **Alchemy Account Kit / Gas Manager setup**
 
@@ -195,7 +197,7 @@ All gas for this UO is sponsored by Gas Manager.
 
 2. Enter **recipient** and **amount**.
 
-3. Click **“4) [EOA 잔고] 가스리스 GST 전송 (permit 사용)”**.
+3. Click **“4) [EOA 잔고] 가스리스 GST 전송 (permit 사용)”** (the “[EOA Balance] Gasless GST Transfer (using permit)” button).
 
 4. Internally, the app performs:
 
@@ -270,9 +272,9 @@ sequenceDiagram
 
 ## 9. Future Optimization: Helper Contract for Permit + Transfer
 
-In the current PoC, the gasless transfer from the EOA is performed via **two separate UserOperations**:
+In the current PoC, the gasless transfer from the EOA is performed via **two business-logic UserOperations (permit + transferFrom)**, plus an optional **one-time no-op deployment UO**:
 
-1. (Optional) no-op UO for deployment
+1. (Optional, one-time) no-op UO for Smart Account deployment
 2. **Permit UO** – `token.permit(owner, spender, ...)`
 3. **transferFrom UO** – `token.transferFrom(owner, recipient, ...)`
 

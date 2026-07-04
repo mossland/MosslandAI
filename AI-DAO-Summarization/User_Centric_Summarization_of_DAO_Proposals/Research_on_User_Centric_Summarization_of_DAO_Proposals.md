@@ -45,25 +45,25 @@ Summaries can be adjusted based on the user’s background knowledge:
 - **Experts**: Focus on key points, avoiding unnecessary explanations.
 
 **Implementation**:
-Use GPT-4-turbo with prompt engineering to adjust the language complexity:
+Use a current OpenAI chat model (as of mid-2026, the latest available models such as GPT-5.5; `gpt-4-turbo` is now legacy) with prompt engineering to adjust the language complexity. The example below uses the current `openai` Python SDK (v1.x and later), which replaced the module-level `openai.ChatCompletion` interface with an instantiated client:
 ```python
-import openai
+from openai import OpenAI
 
-openai.api_key = "YOUR_OPENAI_API_KEY"
+client = OpenAI(api_key="YOUR_OPENAI_API_KEY")
 
 def generate_summary(text, user_level):
     prompt = f"""
     Summarize the following proposal for a {user_level}:
     {text}
     """
-    response = openai.ChatCompletion.create(
-        model="gpt-4-turbo",
+    response = client.chat.completions.create(
+        model="gpt-5.5",
         messages=[
             {"role": "system", "content": "You are an assistant that adapts summaries to the user's expertise."},
             {"role": "user", "content": prompt}
         ]
     )
-    return response['choices'][0]['message']['content']
+    return response.choices[0].message.content
 
 text = "This proposal focuses on integrating blockchain for supply chain management..."
 summary = generate_summary(text, user_level="beginner")

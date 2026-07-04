@@ -19,6 +19,8 @@ BaaS(Blockchain as a Service)로서, 누구나 손쉽게 블록체인 네트워�
 
 루니버스 구조는 기업들이 블록체인 기술을 안전하고 신속하게 도입할 수 있도록 돕는 데 중요한 역할을 해왔으며, 특히 규제 준수가 중요한 산업 분야에서 매력적인 솔루션으로 평가받았습니다. 그러나 글로벌 확장성 및 생태계 다양성 면에서는 여전히 추가적인 고려가 필요합니다.
 
+한편 2026년 중반 기준 람다256은 전통적인 루니버스 BaaS 사이드체인 모델에서 나아가, 이더리움·폴리곤·아비트럼 등 퍼블릭 체인을 대상으로 한 노드·Web3 데이터 서비스인 노딧(NODIT, 앞선 Luniverse NOVA를 계승)으로 사업 방향을 확장해 왔습니다. 컨소시엄 메인넷 “더 밸런스(The Balance)”는 계속 운영되고 있으나, 회사의 최근 성장축은 퍼블릭 체인 인프라 지원 쪽으로 이동한 상태입니다.
+
 ## 3. 루니버스의 구조적 특성 (이더리움과 비교)
 
 ### 3.1 개발 생태계와 커뮤니티의 규모
@@ -39,7 +41,7 @@ BaaS(Blockchain as a Service)로서, 누구나 손쉽게 블록체인 네트워�
 
 람다256 측에서도 “이더리움과의 연동으로 루니버스 생태계를 넓혀 나가고 있다”며, 향후 다른 메인넷과도 연동해 체인 간 상호운용성을 강화할 계획이라고 밝힌 바 있습니다 [3]. 결국 루니버스 프로젝트들이 글로벌 사용자를 끌어들이려면 멀티체인 전략이나 브릿지 활용 등 추가적인 노력이 필요하며, 이 과정에서 UX·운영 절차가 다소 늘어날 수 있으므로 단계적 브릿지 최적화가 중요합니다..
 
-반면 이더리움 메인넷은 전 세계 수백만 명이 단일 지갑 하나로 접근할 수 있는 보편적 플랫폼입니다. 이더리움 지갑 주소만 있으면 어느 국가에서든 참여 가능하고, 메타마스크(MetaMask) 등 범용 지갑으로 다양한 DApp을 자유롭게 이용할 수 있습니다. 2025년 기준 이더리움 네트워크는 활성 (휴면 주소 제외, 30일 내 트랜잭션 기준) 지갑 주소 수가 1억 2천만 개를 넘어섰고, 주당 수십만 개 이상의 신규 지갑이 꾸준히 생성되는 등 글로벌 사용자 기반이 지속 성장 중입니다 [4]. 더욱이 이더리움 위에 구축된 L2 네트워크들을 합치면, 사용자들은 L2를 이용하면서도 여전히 이더리움 메인 생태계의 일부로 통합된 경험을 누릴 수 있습니다. 
+반면 이더리움 메인넷은 전 세계 수백만 명이 단일 지갑 하나로 접근할 수 있는 보편적 플랫폼입니다. 이더리움 지갑 주소만 있으면 어느 국가에서든 참여 가능하고, 메타마스크(MetaMask) 등 범용 지갑으로 다양한 DApp을 자유롭게 이용할 수 있습니다. 2026년 중반 기준 이더리움 메인넷에는 지금까지 생성된 누적 고유 주소가 3억 8천만 개를 넘어섰으며, 월간 활성 주소(30일 내 트랜잭션 기준)는 약 960만 개, 일일 활성 주소는 약 59만 개 수준입니다(L2까지 합산하면 활성 주소는 수천만 개 규모로 늘어납니다). 주당 수십만 개 이상의 신규 지갑이 꾸준히 생성되는 등 글로벌 사용자 기반도 지속 성장 중입니다 [4]. 더욱이 이더리움 위에 구축된 L2 네트워크들을 합치면, 사용자들은 L2를 이용하면서도 여전히 이더리움 메인 생태계의 일부로 통합된 경험을 누릴 수 있습니다. 
 
 ### 3.3 거버넌스 및 네트워크 신뢰성의 차이
 
@@ -55,7 +57,7 @@ BaaS(Blockchain as a Service)로서, 누구나 손쉽게 블록체인 네트워�
 
 루니버스 측은 파트너 토큰 활성화를 위해 업비트·코인원 등과의 기술 연동을 제공하지만, 이는 람다256과 제휴한 일부 국내 거래소에 한정되어 있습니다. 글로벌 거래소와 DeFi 프로토콜들은 대체로 ERC‑20·ERC‑721 등 이더리움 표준 자산을 우선 지원하고, 루니버스 전용 토큰을 직접 상장하는 사례는 드뭅니다. 따라서 루니버스 프로젝트가 세계 시장에서 유동성을 확보하려면, 앞서 NFT 사례처럼 브릿지를 통해 이더리움 호환 토큰으로 전환하거나 별도 ERC‑20 토큰을 미러링 발행해야 합니다. 이 과정은 체인 간 토큰 공급량 관리·보안·사용자 혼선 등 추가적 운영 부담을 수반합니다.
 
-반면 이더리움 생태계에서는 이러한 복잡성이 크게 줄어듭니다. ERC‑20 토큰은 즉시 유니스왑(Uniswap) 같은 글로벌 DEX에 상장할 수 있고, 수백 곳의 중앙화 거래소(CeFi)에서도 손쉽게 지원됩니다. 게다가 수많은 DeFi 프로토콜에서 담보·대출·유동성 채굴 등으로 활용되기 때문에 토큰의 경제적 활용 범위가 넓습니다. 2025년 기준 이더리움은 전체 블록체인 DeFi 예치금(TVL)의 약 55 %를 차지하며 모듈러 확장 전략에 힘입어 솔라나 등의 경쟁 체인을 앞질렀습니다 [5].
+반면 이더리움 생태계에서는 이러한 복잡성이 크게 줄어듭니다. ERC‑20 토큰은 즉시 유니스왑(Uniswap) 같은 글로벌 DEX에 상장할 수 있고, 수백 곳의 중앙화 거래소(CeFi)에서도 손쉽게 지원됩니다. 게다가 수많은 DeFi 프로토콜에서 담보·대출·유동성 채굴 등으로 활용되기 때문에 토큰의 경제적 활용 범위가 넓습니다. 2026년 중반 기준 이더리움은 전체 블록체인 DeFi 예치금(TVL)의 약 53 %를 차지합니다. 이는 2025년 초 약 63 %에서 하락한 수치로 다년 최저치에 근접했지만, 여전히 단일 체인 기준으로는 가장 큰 비중이며 절대 규모도 약 450억 달러로 최대입니다 [5].
 
 이처럼 유동성 격차는 곧 토큰 가치 형성과 사용자 참여 확대에 직결됩니다. Gartner는 퍼블릭·프라이빗 체인을 모두 포함한 블록체인 기술이 2030년까지 3.1 조 달러 이상의 비즈니스 가치를 창출할 것으로 전망하고 있습니다 [6]. 글로벌 유동성 네트워크에 직접 편입되지 못한다면, 이 거대한 가치 파이를 온전히 흡수하기 어렵다는 점에서 루니버스 프로젝트들은 전략적 고민이 필요합니다.
 
@@ -108,15 +110,15 @@ BaaS(Blockchain as a Service)로서, 누구나 손쉽게 블록체인 네트워�
 
 ## 7. 참고자료
 
-[1] 위키원, 루니버스 [https://wiki1.kr/index.php/루니버스](http://wiki.hash.kr/index.php/%EB%A3%A8%EB%8B%88%EB%B2%84%EC%8A%A4) 
+[1] 위키원, 루니버스 [https://wiki1.kr/index.php/루니버스](https://wiki1.kr/index.php/루니버스) 
 
-[2] Cameron O’Rourke, “Why is Anyone Still Developing on Ethereum in 2023?” (2023년 8월) https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-이더리움-e91461d0a45a 
+[2] Cameron O’Rourke, “Why is Anyone Still Developing on Ethereum in 2023?” (2023년 8월) https://medium.com/@CameronORourke/why-is-anyone-still-developing-on-ethereum-e91461d0a45a 
 
 [3] 디센터, “루니버스에서 발행한 NFT, 이더리움으로 옮기세요”… 람다256, 멀티체인 NFT 브릿지 출시 (2022년) https://kr.investing.com/news/cryptocurrency-news/article-787272 
 
 [4] CoinLaw, Ethereum Statistics 2025 https://coinlaw.io/bitcoin-vs-ethereum-statistics/
 
-[5] Coin World, “Ethereum Dominates DeFi with 55% TVL as Modular Approach Outpaces Solana” (2025년 7월) https://www.ainvest.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/
+[5] AInvest, “Ethereum Dominates DeFi with 55% TVL as Modular Approach Outpaces Solana” (2025년 7월, 약 55% 기준) https://www.ainvest.com/news/ethereum-dominates-defi-55-tvl-modular-approach-outpaces-solana-2507/ ; 2026년 중반 수치는 다음을 참조: Bitcoin.com News, “Ethereum’s DeFi TVL Dominance Drops to 53%, Approaching Multi-Year Low” (2026년 5월) https://news.bitcoin.com/ethereums-defi-tvl-dominance-drops-to-53-approaching-multi-year-low/
 
 [6] Gartner, Forecast: Blockchain Business Value, Worldwide, 2024‑2030 (2024년 5월) https://iotworldmagazine.com/2024/05/20/2301/a-review-of-top-blockchain-market-size-reports-2024-2030-on-growth-segments-analysis-and-forecasts-in-uk-europe-and-asia 
 

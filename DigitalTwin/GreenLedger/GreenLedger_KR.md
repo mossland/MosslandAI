@@ -4,10 +4,13 @@
 **저자:** Mossland Lab · Aetherion Co., Ltd.  
 **이메일:** [lab@moss.land](mailto:lab@moss.land)  
 **문서 최초 작성일:** 2025-10-11  
+**상태 (2026년 중반 기준):** 연구 제안 / 개념 설계 단계. 아래 기술한 아키텍처(EcoCredit.sol 컨트랙트, GreenLedger Node, DAO 마켓플레이스)는 미래 지향적 설계이며, 2026년 7월 기준 아직 구현되지 않았다.  
 
 ---
 
 ## 초록 (Abstract)
+기존의 에너지 관리 및 ESG 보고 시스템은 대부분 **중앙기관에 크게 의존**하여,  
+데이터 조작 위험과 검증 지연 문제를 야기한다.  
 현대의 에너지 관리 시스템은 탄소 배출량, 에너지 사용량, 친환경 지표를 수집하지만,  
 이 데이터의 **신뢰성과 투명성**은 여전히 제한적이다.  
 
@@ -42,7 +45,7 @@ flowchart TD
     C --> D["Blockchain Verification Layer"]
     D --> E["Tokenized Eco Credit Smart Contract"]
     E --> F["DAO / Marketplace"]
-````
+```
 
 | 구성요소                          | 역할                         | 주요 기술                                      |
 | ----------------------------- | -------------------------- | ------------------------------------------ |
@@ -50,7 +53,7 @@ flowchart TD
 | **GreenLedger Node**          | 온체인 데이터 전송 및 검증 수행         | Oracle / IPFS / Chainlink Functions        |
 | **Verification Layer**        | 에너지 데이터 해시 및 영지식증명(ZKP) 처리 | zk-SNARKs / Merkle Proof                   |
 | **Eco Credit Smart Contract** | 에너지 효율 개선 시 토큰 발행          | Solidity, ERC-1155 (Fungible + NFT Hybrid) |
-| **Marketplace DAO**           | 친환경 보상, 거래, 거버넌스 운영        | MOC / DAO Voting / Treasury                |
+| **Marketplace DAO**           | 친환경 보상, 거래, 거버넌스 운영        | MOC / DAO Voting / Treasury / Safe Multisig |
 
 ---
 
@@ -81,7 +84,8 @@ sequenceDiagram
 
 ### 3.2 토큰 모델
 
-**Eco Credit Token (ECT)** 은 에너지 절감량, 탄소 배출 절감량, 또는 재생에너지 사용량에 따라 발행된다.
+**Eco Credit Token (ECT)** 은 정량화 가능한 검증된 환경 기여를 나타낸다.  
+ECT는 에너지 절감량, 탄소 배출 절감량, 또는 재생에너지 사용량에 따라 발행된다.
 
 | 구분              | 설명                                    |
 | --------------- | ------------------------------------- |

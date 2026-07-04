@@ -3,12 +3,15 @@
 **Authors:** Mossland Lab · Aetherion Co., Ltd.  
 **Email:** [lab@moss.land](mailto:lab@moss.land)  
 **Date of Initial Document Creation:** 2025-10-11  
+**Status (as of mid-2026):** Research proposal / conceptual design. The architecture described below (EcoCredit.sol contract, GreenLedger Node, DAO marketplace) is forward-looking design and has not yet been implemented as of 2026-07.  
 
 ---
 
 ## Abstract
 Conventional energy management and ESG reporting systems depend heavily on centralized authorities,  
 resulting in data manipulation risks and delayed verification.  
+Modern energy management systems collect carbon-emission, energy-use, and eco-friendly metrics,  
+yet the reliability and transparency of this data remain limited.  
 
 **GreenLedger** introduces a blockchain-based framework for **verified energy traceability** and **tokenized eco credits**.  
 By connecting Aetherion’s **AI-driven digital twin energy analytics** with Mossland’s **blockchain infrastructure and MOC token ecosystem**,  
@@ -19,6 +22,8 @@ this research establishes a decentralized and transparent model for sustainable 
 ## 1. Introduction
 Energy consumption, carbon emissions, and renewable performance data are key to sustainability management,  
 yet the reliability and transparency of these datasets remain limited.  
+Particularly in building energy management and green certification (e.g., LEED, G-SEED),  
+the lack of standardized data collection remains a recognized problem.  
 
 GreenLedger aims to:
 - Enable **on-chain verification** of AI/IoT-based energy data  
@@ -38,15 +43,15 @@ flowchart TD
     C --> D["Blockchain Verification Layer"]
     D --> E["Tokenized Eco Credit Smart Contract"]
     E --> F["DAO / Marketplace"]
-````
+```
 
 | Component               | Role                                     | Core Technology                       |
 | ----------------------- | ---------------------------------------- | ------------------------------------- |
 | **Aetherion Energy AI** | Predicts and validates energy efficiency | BEM Simulation, LLM-based Calibration |
 | **GreenLedger Node**    | Bridges verified data to blockchain      | Oracle / IPFS / Chainlink Functions   |
-| **Verification Layer**  | Hashing and ZKP validation               | zk-SNARKs / Merkle Proof              |
+| **Verification Layer**  | Energy data hashing and ZKP processing   | zk-SNARKs / Merkle Proof              |
 | **Eco Credit Contract** | Issues and tracks energy tokens          | Solidity / ERC-1155 Hybrid Model      |
-| **Marketplace DAO**     | Manages rewards, trading, and governance | MOC / DAO Treasury / Safe Multisig    |
+| **Marketplace DAO**     | Manages rewards, trading, and governance | MOC / DAO Voting / Treasury / Safe Multisig |
 
 ---
 
@@ -77,7 +82,8 @@ sequenceDiagram
 
 ### 3.2 Tokenization Model
 
-The **Eco Credit Token (ECT)** represents a quantifiable, verified environmental contribution.
+The **Eco Credit Token (ECT)** represents a quantifiable, verified environmental contribution.  
+It is issued based on energy savings, carbon-emission reductions, or renewable-energy usage.
 
 | Field                  | Description                                         |
 | ---------------------- | --------------------------------------------------- |

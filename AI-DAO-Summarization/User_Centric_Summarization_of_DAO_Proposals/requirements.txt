@@ -1,2 +1,3 @@
 transformers
 spacy
+openai>=1.0.0
