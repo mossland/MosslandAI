@@ -1,124 +1,149 @@
-# Mossland AI Research
+# 🌿 Mossland AI Research
 
-Welcome to the Mossland AI Research repository. Our latest work focuses on leveraging AI to transform decentralized governance, particularly through advanced DAO summarization, user profiling, and seamless blockchain interactions. Recent research projects in the [AI-DAO-Summarization](./AI-DAO-Summarization/) folder are driving these innovations.
+> Research at the intersection of **AI and Web3** — decentralized governance, autonomous agents, sustainable infrastructure, and the token economy of the Mossland ecosystem.
 
----
+![Research Areas](https://img.shields.io/badge/Research_Areas-21+-6E56CF)
+![Docs](https://img.shields.io/badge/Docs-KR_%7C_EN-2B7A78)
+![Focus](https://img.shields.io/badge/Focus-AI_%C3%97_Web3-0A7BBD)
+![Updated](https://img.shields.io/badge/Updated-2026-4C9F70)
+![Contact](https://img.shields.io/badge/Contact-lab%40moss.land-informational)
 
-## Latest Research Highlights
-
-Our most recent initiatives are centered on enhancing DAO efficiency and user engagement through AI-driven tools. Below are the key projects and their core contributions:
-
-### 1. AI-Based User Profiling & DAO Summary System
-- **Description**:  
-  This research uses AI to analyze user behaviors within DAO governance. By understanding voting patterns and preferences, it generates personalized summaries and recommendations, boosting engagement and informed decision-making.
-- **Resources**:
-  - [AI_Based_User_Profiling_DAO_Summary_System.md (Korean)](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System.md)
-  - [AI_Based_User_Profiling_DAO_Summary_System_EN.md (English)](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System_EN.md)
-
-### 2. Recent DAO AI Case Study
-- **Description**:  
-  This case study analyzes how AI has been successfully integrated into DAO decision-making processes. It examines both the effectiveness and the challenges encountered when deploying AI solutions in decentralized environments.
-- **Resources**:
-  - [Recent_DAO_AI_Case_Study.md (Korean)](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study.md)
-  - [Recent_DAO_AI_Case_Study_EN.md (English)](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study_EN.md)
-
-### 3. User-Centric Summarization of DAO Proposals
-- **Description**:  
-  In the face of increasing proposal volumes and complex discussions, this project develops AI tools to efficiently extract key points from DAO proposals and forum debates, delivering tailored summaries for diverse user groups.
-- **Resources**:
-  - [User-Centric Summarization of DAO Proposals Folder](./AI-DAO-Summarization/User_Centric_Summarization_of_DAO_Proposals/)
-
-### 4. Optimizing AI Agent Interaction in DAO Environments
-- **Description**:  
-  This study focuses on refining the interface between AI agents and DAO users. By harnessing natural language processing and adaptive conversational UIs, it aims to enhance user interactions, streamline governance processes, and improve overall engagement.
-- **Resources**:
-  - [Optimizing_AI_Agent_DAO_User_Interface.md](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface.md)
-  - [MosslandAI_AI_DAO_Summarization_Use_Cases.md](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md)
-
-### 5. DAO-Focused Multi-Document Summarization System Design
-- **Description**:  
-  As DAOs generate diverse text data—from on-chain records to community discussions—this project designs a system to consolidate and summarize information from multiple sources. The goal is to support more informed decision-making and enhance transparency.
-- **Resources**:
-  - [DAO_Multi_Doc_Summarization_System_Design.md](./AI-DAO-Summarization/DAO_Multi_Doc_Summarization_System_Design.md)
-
-### 6. DAO User Scenario Flow Diagrams
-- **Description**:  
-  This initiative presents illustrative flow diagrams of user scenarios within a DAO. It maps out AI-driven processes that facilitate governance and improve member interactions.
-- **Resources**:
-  - [DAO_User_Scenario_Flow_Diagrams.md](./AI-DAO-Summarization/DAO_User_Scenario_Flow_Diagrams.md)
-
-### 7. Optimizing AI Agent Access to Blockchain Smart Contracts
-- **Description**:  
-  Focusing on the technical integration of AI with blockchain, this project investigates efficient methods for AI agents to query on-chain data, execute transactions, and interact with smart contracts. It aims to refine both smart contract design and AI agent performance.
-- **Resources**:
-  - [Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md)
-  - [Optimizing_AI_Agent_Blockchain_Interaction.md](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Blockchain_Interaction.md)
-
-### 8. Character-Based AI Chatbot Platform Research
-- **Description**:  
-  This comprehensive research explores the architecture, ecosystem, blockchain integration, and future direction of character-based AI chatbot platforms. It details how persona-driven AI agents can serve as interactive content, intellectual property, and Web3-native assets.
-- **Resources**:
-  - [Character_AI_Chatbot_Platform_Research.md](./Character_AI_Chatbot/Character_AI_Chatbot_Platform_Research.md)
-
-### 9. Innovative Blockchain Integrations for Character AI Chatbot Platforms
-- **Description**:  
-  This research explores how blockchain and cryptocurrency can be applied to character-based AI chatbot platforms. It proposes innovative solutions for decentralized identity, monetization, and ownership in both hybrid and fully on-chain systems.
-- **Resources**:
-  - [Innovative_Blockchain_Integration_Ideas_for_Character_AI.md](./Character_AI_Chatbot/Innovative_Blockchain_Integration_Ideas_for_Character_AI.md)
-
-### 10. KRW-Pegged Stablecoin Integration for Mossland
-- **Description**:  
-  Analyzing stablecoin models like KRWO for potential integration within the Mossland ecosystem, facilitating transactions and DeFi applications.
-- **Resources**:
-  - [KRW-Pegged Stablecoin Design for Mossland](./Stablecoin_Research/KRW_Pegged_Stablecoin_for_Mossland.md)
-
-### 11. AI-GovRisk: Autonomous Governance Risk Intelligence for DAO Ecosystems
-- **Description**:  
-  This research proposes an AI-powered governance analysis framework for DAOs. It predicts proposal risks, estimates success likelihood, and automatically generates improvement suggestions to enhance transparency, trust, and efficiency in decentralized governance.
-- **Resources**:
-  - [AI-GovRisk_EN.md (English)](./GovernanceRisk/AI-GovRisk_EN.md)  
-  - [AI-GovRisk_KR.md (Korean)](./GovernanceRisk/AI-GovRisk_KR.md)
-
-### 12. EcoAI: Sustainable AI Infrastructure Optimization for Blockchain-Integrated Systems
-- **Description**:  
-  This research focuses on building a sustainable AI infrastructure that optimizes energy usage and operational efficiency within blockchain-integrated systems.  
-  **EcoAI** dynamically monitors AI and blockchain workloads, models energy consumption, and recommends optimization strategies using reinforcement learning.  
-  It also explores on-chain sustainability proofs and incentive systems (Green Proof & Eco Credit), establishing a new standard for *Green AI* within the Web3 ecosystem.
-- **Resources**:
-  - [EcoAI_EN.md (English)](./EcoAI/EcoAI_EN.md)  
-  - [EcoAI_KR.md (Korean)](./EcoAI/EcoAI_KR.md)
-
-### 13. GreenLedger: Blockchain-Verified Energy Traceability and Tokenized Eco Credits
-- **Description**:  
-  This research introduces **GreenLedger**, a blockchain-based framework for transparent and verifiable energy traceability.  
-  Developed jointly by **Mossland Lab** and **Aetherion Co., Ltd.**, the project integrates AI-driven digital twin analytics, IoT data, and smart contracts to certify energy efficiency and carbon reduction in a tamper-proof manner.  
-  Verified results are issued as **Eco Credit Tokens (ECTs)**, enabling a decentralized ecosystem for ESG rewards, carbon markets, and MOC-linked green economy models.
-- **Resources**:
-  - [GreenLedger_EN.md (English)](./DigitalTwin/GreenLedger/GreenLedger_EN.md)  
-  - [GreenLedger_KR.md (Korean)](./DigitalTwin/GreenLedger/GreenLedger_KR.md)
+Welcome to the **Mossland AI Research** repository. As of mid-2026, our work spans six pillars — from AI tooling for DAO governance and autonomous on-chain agents, to sustainable/green AI, digital twins, stablecoins, character AI, and blockchain network infrastructure. Each study is grounded in the **Mossland ecosystem** (MOC / Mosscoin utility, DAO governance, and the metaverse) and most are published in both **Korean and English**.
 
 ---
 
-## Ecosystem Integration
+## 🗺️ Research Map
 
-Beyond DAO enhancements, our research also explores:
-- **AI and Metaverse Applications**: Innovating user experiences within virtual environments.
-- **Mosscoin Utility Expansion**: Developing AI agents that increase the practical use of Mosscoin—such as tokenizing AI-generated prompts for broader marketplace integration.
+```mermaid
+flowchart LR
+    ROOT(("🌿 Mossland<br/>AI Research"))
+    ROOT --> A["🏛️ AI for DAO Governance"]
+    ROOT --> B["🤖 Agents, Protocols &amp; Trust"]
+    ROOT --> C["🌱 Sustainable AI &amp; Energy"]
+    ROOT --> D["💴 Stablecoins &amp; Finance"]
+    ROOT --> E["🎭 Character AI &amp; Content"]
+    ROOT --> F["🌐 Networks &amp; Infrastructure"]
+    A --> A1["Profiling · Summaries · Proposal Gen · GovRisk"]
+    B --> B1["MCP · Agentic Payments · Agent Identity · Verifiable AI"]
+    C --> C1["EcoAI · GreenLedger · Digital Twin · AI×DePIN"]
+    D --> D1["KRW-Pegged Stablecoin"]
+    E --> E1["Character AI Platforms · On-chain Character IP"]
+    F --> F1["Luniverse ↔ Ethereum · Gasless ERC-20"]
+```
+
+### ✨ New in 2026
+
+Four new research tracks explore the emerging **agentic** stack — how autonomous AI agents transact, prove their work, and carry identity on-chain:
+
+| New Track | In one line | Docs |
+| --- | --- | --- |
+| **Agentic Payments** | Autonomous agent payments via MCP × x402/AP2 × stablecoins, settled in MOC | [KR](./AgenticPayments/AgenticPayments_KR.md) · [EN](./AgenticPayments/AgenticPayments_EN.md) |
+| **AI × DePIN** | Token-incentivized physical infrastructure for Mossland's AI & energy systems | [KR](./AI-DePIN/AI_DePIN_KR.md) · [EN](./AI-DePIN/AI_DePIN_EN.md) |
+| **Verifiable AI** | TEE · zkML · opML · C2PA proofs so on-chain AI outputs are machine-checkable | [KR](./VerifiableAI/VerifiableAI_KR.md) · [EN](./VerifiableAI/VerifiableAI_EN.md) |
+| **Onchain Agent Identity** | ERC-8004 identity, reputation & scoped delegation for AI agents | [KR](./AgentIdentity/AgentIdentity_KR.md) · [EN](./AgentIdentity/AgentIdentity_EN.md) |
 
 ---
 
-## Previous AI Research Initiatives
+## 🏛️ AI for DAO Governance
 
-We have a rich history of pioneering projects, including:
-- [MossCoin AI NFT Research](https://github.com/mossland/MossCoin_AI_NFT_Research): Investigating NFT tokenization of AI-generated prompts.
-- [MossCoin for Machine](https://github.com/mossland/MossCoinForMachine): Exploring machine-to-machine interactions using Mosscoin.
-- [Mossland XR](https://github.com/mossland/MosslandXR): Integrating AI with Extended Reality for immersive metaverse experiences.
+AI tooling that makes decentralized governance more legible, participatory, and efficient.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **User Profiling & DAO Summary** | Personalized summaries from voting behavior and preferences | [KR](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System.md) · [EN](./AI-DAO-Summarization/AI_Based_User_Profiling_DAO_Summary_System_EN.md) |
+| **Recent DAO AI Case Study** | How AI has been integrated into real DAO decision-making | [KR](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study.md) · [EN](./AI-DAO-Summarization/Recent_DAO_AI_Case_Study_EN.md) |
+| **User-Centric Proposal Summarization** | Tailored summaries of proposals and forum debate | [Folder](./AI-DAO-Summarization/User_Centric_Summarization_of_DAO_Proposals/) |
+| **AI Agent ↔ DAO Interface** | Conversational, adaptive UIs for governance | [Interface](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface.md) · [Use Cases](./AI-DAO-Summarization/Optimizing_AI_Agent_DAO_User_Interface/MosslandAI_AI_DAO_Summarization_Use_Cases.md) |
+| **Multi-Document Summarization** | Consolidating on-chain records + community text | [Design](./AI-DAO-Summarization/DAO_Multi_Doc_Summarization_System_Design.md) |
+| **DAO User Scenario Flows** | Flow diagrams of AI-driven governance journeys | [Diagrams](./AI-DAO-Summarization/DAO_User_Scenario_Flow_Diagrams.md) |
+| **AI Crypto Analyst System** | Automated market/token analysis for DAO participants | [Report](./AI-DAO-Summarization/AI_Based_Cryptocurrency_Analyst_System_Research_Report.md) |
+| **AI-Driven Proposal Generation** | Drafting proposals from trends, sentiment & on-chain signals | [System](./AI-DAO-Summarization/AI_Driven_DAO_Proposal_Generation_System.md) |
+| **AI-GovRisk** | Predicting proposal risk & success, with improvement suggestions | [KR](./GovernanceRisk/AI-GovRisk_KR.md) · [EN](./GovernanceRisk/AI-GovRisk_EN.md) |
 
 ---
 
-## Get Involved
+## 🤖 AI Agents, Protocols & Trust
 
-We welcome contributions from developers, researchers, and enthusiasts passionate about decentralized AI innovation.  
-For collaboration or inquiries, please contact: [lab@moss.land](mailto:lab@moss.land).
+The infrastructure for autonomous AI agents — how they connect to tools, pay, prove, and identify themselves.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **Model Context Protocol (MCP)** | Open standard connecting AI models to tools, data & context | [Research](./model-context-protocol/Anthropic_MCP.md) |
+| **Agentic Payments** ✨ | Autonomous agent payments (MCP × x402/AP2 × stablecoins), settled in MOC | [KR](./AgenticPayments/AgenticPayments_KR.md) · [EN](./AgenticPayments/AgenticPayments_EN.md) |
+| **Onchain Agent Identity** ✨ | ERC-8004 identity, reputation & scoped ERC-4337/EIP-7702 delegation | [KR](./AgentIdentity/AgentIdentity_KR.md) · [EN](./AgentIdentity/AgentIdentity_EN.md) |
+| **Verifiable AI** ✨ | TEE attestation, zkML/opML proofs & C2PA provenance for on-chain AI | [KR](./VerifiableAI/VerifiableAI_KR.md) · [EN](./VerifiableAI/VerifiableAI_EN.md) |
+| **AI Agent ↔ Smart Contracts** | Efficient on-chain query, execution & contract design for agents | [Access](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts.md) · [Interaction](./AI-DAO-Summarization/Optimizing_AI_Agent_Access_to_Blockchain_Smart_Contracts/Optimizing_AI_Agent_Blockchain_Interaction.md) |
+
+---
+
+## 🌱 Sustainable AI, Digital Twin & Energy
+
+Green AI infrastructure and physical-world systems, tied to verifiable on-chain incentives.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **EcoAI** | Energy-optimized, sustainability-aware AI infrastructure (RL scheduling, Green Proof) | [KR](./EcoAI/EcoAI_KR.md) · [EN](./EcoAI/EcoAI_EN.md) |
+| **GreenLedger** | Blockchain-verified energy traceability + tokenized Eco Credits (with Aetherion Co.) | [KR](./DigitalTwin/GreenLedger/GreenLedger_KR.md) · [EN](./DigitalTwin/GreenLedger/GreenLedger_EN.md) |
+| **Digital Twin & HVAC** | Digital-twin foundations for buildings and energy systems | [Folder](./DigitalTwin/README.md) · [HVAC Primer](./DigitalTwin/commercial-building-hvac-basics-for-digital-twin-engineers.md) |
+| **AI × DePIN** ✨ | Token-incentivized physical infrastructure (compute, sensors, energy) for AI | [KR](./AI-DePIN/AI_DePIN_KR.md) · [EN](./AI-DePIN/AI_DePIN_EN.md) |
+
+---
+
+## 💴 Stablecoins & On-Chain Finance
+
+Feasibility, regulation, and design for a KRW-pegged stablecoin in the Mossland economy.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **KRW-Pegged Stablecoin** | Structure, Korean/global regulation (as of 2026), and Mossland integration | [Index](./Stablecoin_Research/README.md) · [Design](./Stablecoin_Research/KRW_Pegged_Stablecoin_for_Mossland.md) · [Overview](./Stablecoin_Research/krw-stablecoin-overview.md) · [Applications](./Stablecoin_Research/krw-stablecoin-applications.md) · [Leverage](./Stablecoin_Research/krw-stablecoin-leverage-market.md) · [CBDC vs. SC](./Stablecoin_Research/krw-cbdc-stablecoin-comparison.md) |
+
+---
+
+## 🎭 Character AI & Web3 Content
+
+Persona-driven AI as interactive content, intellectual property, and Web3-native assets.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **Character AI Platform Research** | Architecture, ecosystem & future of character-based AI chatbots | [Research](./Character_AI_Chatbot/Character_AI_Chatbot_Platform_Research.md) |
+| **On-chain Character AI Integrations** | Decentralized identity, monetization & ownership for character AI | [Ideas](./Character_AI_Chatbot/Innovative_Blockchain_Integration_Ideas_for_Character_AI.md) |
+
+---
+
+## 🌐 Blockchain Networks & Infrastructure
+
+The networks and on-chain plumbing underneath Mossland's applications.
+
+| Topic | Focus | Docs |
+| --- | --- | --- |
+| **Luniverse ↔ Ethereum** | Luniverse network overview and Ethereum transition considerations | Overview: [KR](./LuniverseNetwork/luniverse-network-overview.md) · [EN](./LuniverseNetwork/luniverse-network-overview_en.md) — Transition: [KR](./LuniverseNetwork/luniverse-ethereum-transition-considerations.md) · [EN](./LuniverseNetwork/luniverse-ethereum-transition-considerations_en.md) |
+| **Gasless ERC-20 (Gas Sponsorship PoC)** | Gasless token transfers on Sepolia (Alchemy Account Kit + Gas Manager) | [Overview](./erc20-gas-sponsorship-poc/README.md) · [Env Setup](./erc20-gas-sponsorship-poc/docs/01-erc20-gas-sponsorship-env.md) · [PoC](./erc20-gas-sponsorship-poc/docs/02-erc20-gas-sponsorship-poc.md) |
+
+---
+
+## 🔗 Ecosystem Integration
+
+Cross-cutting threads that tie the research areas together:
+
+- **AI & Metaverse Applications** — innovating user experiences within Mossland's virtual environments.
+- **Mosscoin (MOC) Utility Expansion** — AI agents that grow the practical use of MOC, from tokenized AI prompts to agent-settled machine-to-machine payments.
+- **Verifiable, Sustainable, Autonomous** — the 2026 agenda: agents that can prove their work (Verifiable AI), pay for it (Agentic Payments), identify themselves (Agent Identity), and run on accountable green infrastructure (EcoAI, GreenLedger, AI × DePIN).
+
+---
+
+## 📚 Previous AI Research Initiatives
+
+A rich history of pioneering projects:
+
+- [MossCoin AI NFT Research](https://github.com/mossland/MossCoin_AI_NFT_Research) — NFT tokenization of AI-generated prompts.
+- [MossCoin for Machine](https://github.com/mossland/MossCoinForMachine) — machine-to-machine interactions using Mosscoin.
+- [Mossland XR](https://github.com/mossland/MosslandXR) — AI with Extended Reality for immersive metaverse experiences.
+
+---
+
+## 🤝 Get Involved
+
+We welcome contributions from developers, researchers, and enthusiasts passionate about decentralized AI innovation.
+For collaboration or inquiries, contact **[lab@moss.land](mailto:lab@moss.land)**.
 
 Let's build the future of decentralized AI together!
